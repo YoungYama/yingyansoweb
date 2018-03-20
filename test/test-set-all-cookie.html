@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<div id="iframe">
+			
+		</div>
+
+		<script>
+			var token = "1231231231sssd";
+			var domains = "http://www.yang.cn:8020,http://admin.yang.net:8020";
+
+			var html = '';
+
+			var url = '';
+			var urls = domains.split(",");
+			for(var i in urls) {
+
+				url = urls[i] + '/yingyansoweb/test/test-set-cookie.html?token=' + token;
+
+				html += '<iframe src="' + url + '"></iframe>';
+			}
+
+			document.getElementById("iframe").innerHTML = html;
+		</script>
+
+	</body>
+
+</html>

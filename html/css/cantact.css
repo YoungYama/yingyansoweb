@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+.center{ width:1080px; margin:auto; margin-top:80px;}
+.center1{ width:355px; height:578px; float:left; background:url(../img/images/contact_03.png);}
+.center2{ width:612px; float:left; margin-left:60px;}
+.p{ margin-top:24px;}

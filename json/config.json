@@ -1,0 +1,12 @@
+{
+	"yysCentreUrl": "http://localhost:8280/yingyansocentre",
+	"yysServiceUrl": "http://localhost:8180/yingyansoservice",
+	"searchWordMaxLength": "55",
+	"countrys": "au,nr,nz,fj,sb,pa,vu,ki,tv,fm,mh,ck,to,pg,za,et,ly,eg,zm,ng,zr,gh,ke,mu,na,ma,sd,tn,dz,er,so,dj,tz,ug,rw,sc,bi,td,cf,cm,cq,ga,st,mr,sn,gm,ml,bf,gn,cv,sl,lr,tg,bj,ne,ao,zw,mw,mz,bw,na,sz,ls,mg,km,us,ca,mx,py,ar,cu,uy,cl,cr,br,pr,co,pe,pa,do,gt,bz,ev,hn,ni,bs,jm,vc,tt,ve,gy,ec,bo,ag,ht,kn,lc,vc,gd,bb,an,gf,sr,uk,fr,de,nl,es,at,dk,pl,cz,fi,ch,se,ru,ua,ie,si,be,no,bg,it,hu,hr,pt,ro,gr,is,ee,li,lu,mc,rs,mk,ba,sm,me,ba,mt,gg,ad,va,al,lv,lt,md,sk,hk,cn,tw,jp,kr,ph,sg,my,la,bd,mn,np,qa,th,bh,pk,tr,om,id,in,ae,vn,il,mv,id,kh,mm,bt,lk,kz,kg,uz,tm,af,iq,ir,sy,jo,lb,qa,kw,ye,ge,az,cy"
+	,
+	"yysCentreUrl": "http://115.29.230.132:86",
+	"yysCentreUrl": "http://account.yingyanso.net",
+	"yysServiceUrl": "http://115.29.230.132:872",
+	"searchWordMaxLength": "55",
+	"countrys": "au,nr,nz,fj,sb,pa,vu,ki,tv,fm,mh,ck,to,pg,za,et,ly,eg,zm,ng,zr,gh,ke,mu,na,ma,sd,tn,dz,er,so,dj,tz,ug,rw,sc,bi,td,cf,cm,cq,ga,st,mr,sn,gm,ml,bf,gn,cv,sl,lr,tg,bj,ne,ao,zw,mw,mz,bw,na,sz,ls,mg,km,us,ca,mx,py,ar,cu,uy,cl,cr,br,pr,co,pe,pa,do,gt,bz,ev,hn,ni,bs,jm,vc,tt,ve,gy,ec,bo,ag,ht,kn,lc,vc,gd,bb,an,gf,sr,uk,fr,de,nl,es,at,dk,pl,cz,fi,ch,se,ru,ua,ie,si,be,no,bg,it,hu,hr,pt,ro,gr,is,ee,li,lu,mc,rs,mk,ba,sm,me,ba,mt,gg,ad,va,al,lv,lt,md,sk,hk,cn,tw,jp,kr,ph,sg,my,la,bd,mn,np,qa,th,bh,pk,tr,om,id,in,ae,vn,il,mv,id,kh,mm,bt,lk,kz,kg,uz,tm,af,iq,ir,sy,jo,lb,qa,kw,ye,ge,az,cy"
+}

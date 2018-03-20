@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>学堂价值</title>
+    <link href="css/school-index.css" rel="stylesheet" type="text/css">
+    <link href="css/head to tail.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--top -->
+<div class="top">
+   <!-- <div class="top1">
+        <img style=" text-align:center; margin-top:25px;" src="img/logo.png">
+        <div class="top_nav"><a href="../index.html">搜客户</a>|<a href="../product/index.html">产品介绍 |<a href="../buy.html">产品价格</a>|<a
+                href="../product/download.html">软件下载</a>|<a href="../about/case.html">成功案例</a>|<a
+                href="../about/index.html">关于我们</a>|<a href="../school/index.html">鹰学堂</a>
+        </div>
+    </div>-->
+    <div class="top2">
+        <div class="top2_nav"><span class="nav_lev"><a href="index.html?school-index">学堂简介</a></span>|<span class="nav_lev1"><a
+                href="index.html?school-value">学堂价值</a></span>|<span class="nav_lev1"><a href="index.html?school-learning">学习模式</a></span>|<span
+                class="nav_lev1"><a href="index.html?school-scope">课程范围</a></span>|<span class="nav_lev1"><a
+                href="index.html?school-notice">课程预告</a></span>|<span class="nav_lev1"><a href="index.html?school-vip">VIP专区</a></span></div>
+    </div>
+</div>
+    <!--banner -->
+    <div class="banner"></div>
+
+    <!--content -->
+    <div class="content">
+        <div class="content_img"><img src="img/images/index_10.png" width="352" height="231"></div>
+        <div class="content_text"><p>鹰学堂是由鹰眼搜团队精心打造的外贸知识学习社区，通过鹰眼搜QQ群、微信群、网站、论坛、以及线下课堂等平台，进行系统化的外贸知识培训和交流。旨在让广大学员学以致用，培养外贸营销新思维，练就外贸实战真功夫。
+        </p></div>
+    </div>
+    <div class="title1"><p>鹰学堂优势</p></div>
+    <div class="title1_img"><img src="img/images/index_13.png" width="242" height="14"></div>
+    <div class="super">
+        <div class="super_1">
+        <div class="img"><img src="img/images/peo_05.png" width="155" height="185"></div>
+            <p class="p1"><span style="font-size:18px;">让应届毕业生</span></p>
+            <p class="p2">具备更强的就业能力<br/>
+抢占就业先机<br/>
+更受企业欢迎
+            </p></div>
+        <div class="super_2">
+        <div class="img"><img src="img/images/peo_09.png" width="155" height="185"></div>
+        <p class="p1"><span style="font-size:18px;"> 让外贸小白</span></p>
+            <p class="p2">
+                掌握更多的实战技巧<br/>
+快速适应工作<br/>
+更受上司青睐
+            </p></div>
+        <div class="super_2">
+        <div class="img"><img src="img/images/peo_03.png" width="155" height="185"></div>
+        <p class="p1"><span style="font-size:18px;"> 让外贸精英</span></p>
+            <p class="p2">
+                获取更好的营销思维<br/>
+                轻松应对客户<br/>
+                拿下更多订单
+            </p></div>
+        
+    </div>
+    <div class="title2"><p>鹰学堂价值观</p></div>
+    <div class="title1_img"><img src="img/images/index_13.png" width="242" height="14"></div>
+    <div class="title4"><p>拒绝高大上 实战拿订单</p></div>
+    <div class="super_3"><img src="img/images/index__03.png" width="1118" height="410"></div>
+    <div class="super_3-text" style="margin-bottom: 140px;"><p>
+        鹰学堂提供一切与外贸实战操作场景有关的课程干货。</p>
+    <p style="margin-top: 20px;"><button class="btn-xx" style="cursor: pointer;">开始免费学习</button> <button class="btn-xx-vip" style="cursor: pointer;">进入VIP学习区</button></p></div>
+
+    <!--buttom -->
+  <!--  <div class="buttom">
+        <div class="buttom_nav"><a href="../product/faq.html">常见问题</a><a href="../product/images/zhengshu.jpg">软件证书</a><a href="../about/Friendlink.html" ">友情链接</a><script src="https://s11.cnzz.com/stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script></div>
+    <div class="buttom_text"><p>版权所有 © 深圳鹰眼搜科技有限公司　粤ICP备10063542号</p></div>
+    </div>-->
+
+	<script>
+		
+		var token = "";
+		if (yzzCookieToken.getLoginUserToken() != null) {
+			token = "&token=" + yzzCookieToken.getLoginUserToken();
+		}
+		
+		$(".super_3-text .btn-xx").click(function(){
+			open(yysConfigs.yxtServiceUrl + "/views/index.html?action=courses&value=open-1" + token);
+		});
+		
+		$(".super_3-text .btn-xx-vip").click(function(){
+			open(yysConfigs.yxtServiceUrl + "/views/index.html?action=courses&value=open-0" + token);
+		});
+	</script>
+
+</body>
+</html>

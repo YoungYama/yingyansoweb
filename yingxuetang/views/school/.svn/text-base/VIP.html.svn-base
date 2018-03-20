@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VIP学习</title>
+<link href="yingxuetang/resources/css/school/VIP.css" rel="stylesheet"
+	type="text/css">
+<link href="yingxuetang/resources/css/school/head-to-tail.css" rel="stylesheet"
+	type="text/css">
+</head>
+
+<body>
+
+	<!--content -->
+	<div class="content">
+		<p class="h1">VIP学习专区</p>
+	</div>
+	<div class="content_img">
+		<div class="content_img1">
+			<img src="yingxuetang/resources/images/school/VIP2_03.png" width="422"
+				height="328">
+		</div>
+		<div class="content_img2">
+			<p style="font-size:30px; color:#5ac3ff">鹰学堂VIP会员尊享</p>
+			<p style=" margin-top:20px;font-size:18px; color:#5ac3ff">
+				无限次享受价值1680元的外贸实战技巧教学视频<br> 无限次参加价值1280元在线音频培训和课件阅读<br>
+				无限次享受一对一VIP会员专属服务<br> 无限次参加鹰眼搜线下培训和相关活动
+			</p>
+			<p>
+				<button onclick="location.href = 'buy.html';" class="btn-buy to-yys-buy" style="cursor: pointer;">如何成为VIP</button>
+			</p>
+		</div>
+	</div>
+
+	<div style=" text-align:center; margin-top:30px;">
+		<img src="yingxuetang/resources/images/school/vipzz_03.png" width="1200"
+			height="900">
+	</div>
+
+	<div class="none"></div>
+
+	<script type="text/javascript">
+		$(".to-yys-buy").click(function() {
+			window.open(yysWebUrl + '/buy.html', '_blank');
+		});
+	</script>
+</body>
+</html>

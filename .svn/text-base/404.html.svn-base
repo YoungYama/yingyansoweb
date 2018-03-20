@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <link id="link" rel="alternate icon" type="image/png">
+</head>
+<style>
+    img{
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -291px 0 0 -500px;
+    }
+</style>
+<body>
+<img id="img"/>
+<script>
+	
+	var url = location.protocol + "//" + location.host;
+	
+	document.getElementById("img").src = url + "/img/eagle.png";
+	document.getElementById("link").href = url + "/img/es.ico";
+</script>
+</body>
+</html>

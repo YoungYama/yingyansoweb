@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>手机绑定</title>
+		<link rel="stylesheet" href="../css/common.css?version=14" />
+		<link rel="stylesheet" href="../css/iconfont.css?version=14" />
+		<link rel="stylesheet" href="../css/tipAlert.css?version=14" />
+
+		<style type="text/css">
+			#main-container .right-ul li {
+				margin-top: 15px;
+			}
+			
+			.register {
+				z-index: 1 !important;
+			}
+			
+			.sign-in {
+				position: absolute !important;
+				margin-top: 70px !important;
+			}
+			
+			#set-content {
+				min-height: 520px !important;
+			}
+			
+			.tab-title {
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.tab-title span {
+				border: 0px !important;
+				cursor: default !important;
+			}
+			
+			#back-login a {
+				font-size: 12px;
+				position: relative;
+				top: 6px;
+				left: 5px;
+				color: #3453A3 !important;
+			}
+			
+			.registerSuccess-layer .dialog-mask {
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(51, 51, 51, 0.6);
+			}
+			
+			.registerSuccess-layer .registerSuccess {
+				margin-left: -170px !important;
+			}
+			
+			.registerSuccess a:hover {
+				text-decoration: underline !important;
+			}
+			
+			#main-container .footer{
+				z-index: 500 !important;
+				position: fixed;
+				bottom: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="register" style="display: block;">
+			<div class="dialog-mask"></div>
+			<div class="sign-in">
+				<div class="loading">
+					<div class="loadEffect">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<div class="register-tab">
+					<div class="tab-title">
+						<span class="bind-title">手机绑定</span>
+					</div>
+					<div class="import-table">
+						<div id="log-in-msg" style="display: none;color: red;text-align: center;position: relative;top: -19px;font-size: 16px;">msg</div>
+						<div class="sign-in-box">
+							<div class="import-frame user-name">
+								<i class="icon iconfont icon-yonghu"></i>
+								<!--<input type="text" onkeypress="return event.keyCode>=48&&event.keyCode<=57" placeholder="输入手机号" id="user-tel"/>-->
+								<input type="text" placeholder="输入手机号" id="sign-user-tel" />
+								<span class="red user-warn">请输入正确的手机号！</span>
+							</div>
+							<!--<div class="import-frame password">
+								<i class="icon iconfont icon-mima"></i>
+								<input type="password" placeholder="输入密码" id="sign-user-key" />
+								<span class="red password-warn">请输入6-20位密码！</span>
+							</div>-->
+							<div class="code-box">
+								<div class="import-frame mycode">
+									<i class="icon iconfont icon-yanzhengma"></i>
+									<input type="text" placeholder="输入验证码" id="codeVal" />
+									<span class="red code-warn">请输入正确的验证码！</span>
+								</div>
+								<span class="code-btn" id="code">获取验证码</span>
+								<span class="disable-btn" id="disable-code"><span class="code-date" id="code-date">60</span>秒后重发</span>
+							</div>
+							<div class="agreement">
+								<input type="checkbox" id="accept-agreement" checked="checked" />
+								<a href="index.html?about-agreement" target="_blank" title="点击查看《鹰眼搜用户协议》">我已经仔细阅读并接受《鹰眼搜用户协议》</a>
+							</div>
+							<div class="sign-in-btn sign-in-btn-click">
+								绑定
+							</div>
+							<div id="back-login">
+								<a href="../index.html#login">返回登录</a>
+							</div>
+							<div class="sign-in-footer">
+								外贸找客户，就上鹰眼搜
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--绑定成功-->
+		<div class="registerSuccess-layer">
+			<div class="dialog-mask"></div>
+			<div class="registerSuccess">
+				<span class="red">  恭喜您成功绑定手机
+		</span>
+
+				<a href="javascript:void(0);">关注鹰眼搜公众号，学习搜索客户技巧</a>
+				<img id="qrcode-img" class="dy-code" />
+
+				<div id="qrcode-img-div"></div>
+
+				<!--<a href="javascript:void(0);">自动登录中 ···
+					<span id="yyedtime">10</span> ···</a>-->
+
+				<a href="javascript:void(0);">扫一扫，关注后即可登录使用</a>
+			</div>
+
+		</div>
+		<!--绑定成功-->
+
+		<script type="text/javascript" src="../js/json2.js?version=14"></script>
+		<script type="text/javascript" src="../js/browser-ompatibility.js?version=14"></script>
+		<script type="text/javascript" src="../js/config.js?version=14"></script>
+		<script type="text/javascript" src="../js/yys-cookie-token-1.0.js?version=14"></script>
+		<script type="text/javascript" src="../js/tipAlert.js?version=14"></script>
+		<script type="text/javascript" src="../js/utf.js?version=14"></script>
+		<script type="text/javascript" src="../js/jquery.qrcode.js?version=14"></script>
+		<script type="text/javascript" src="../js/show-bind-qrcode.js?version=14"></script>
+		<script>
+			isBindMobile();
+			function isBindMobile() {
+				$.ajax({
+					type: 'POST',
+					url: yysConfigs.yysCentreUrl + '/yys/isBind',
+					headers: {
+						"LoginUserToken": yzzCookieToken.getLoginUserToken()
+					},
+					data: {
+						type: 2
+					},
+					dataType: 'json',
+					success: function(data) {
+						if(data == 1) { // 已绑定
+							location.href = "../index.html";
+						}
+					}
+				});
+			}
+
+			var phonePattern = /^1[34578]\d{9}$/;
+			//是否接受鹰眼搜用户协议
+			$("#accept-agreement").click(function() {
+				if($(this).prop("checked")) { //接受
+					$(".sign-in-btn").addClass("sign-in-btn-click");
+				} else {
+					$(".sign-in-btn").removeClass("sign-in-btn-click");
+				}
+			});
+
+			//点击注册按钮
+			$(document).on('click', '.sign-in-btn-click', function() {
+				var account = $('#sign-user-tel').val();
+				var code = $('#codeVal').val();
+				telWarn('#sign-user-tel');
+				/*keyWarn('#sign-user-key');*/
+				codeWarn('#codeVal');
+				if(account.length === 11 && (phonePattern.test(account)) && account.length >= 6 & account.length <= 20 && code != "") {
+					$('.loading').show(); //出现加载界面
+
+					$.ajax({
+						type: 'post',
+						url: yysConfigs.yysCentreUrl + '/yys/bind',
+						headers: {
+							"LoginUserToken": value
+						},
+						data: {
+							"mobile": account,
+							"code": code
+						},
+						success: function(data) {
+							$('.loading').hide();
+							if(data.code === 200) {
+								
+								var token = data.data;
+								if (token != null && token.trim().length > 0) {
+									value = token;
+								}
+								
+								//清空缓存
+								yzzCookieToken.removePageHolder();
+
+								yzzCookieToken.deleteBindQrCodeTicket();
+								
+								yzzCookieToken.deleteUserInfo();
+								
+								//设置已登录用户的标识id
+								yzzCookieToken.setLoginUserToken(value);
+
+								showBindQrCode();
+
+								$(".registerSuccess-layer").fadeIn();
+
+							} else {
+								$("body").tipAlert({
+									imgUrl: "../img/no-msg.gif",
+									cancelTipUrl: "../img/close.png",
+									title: data.msg,
+									noMsg: true
+								});
+							}
+						}
+					})
+				}
+			});
+
+			function telWarn(myId) {
+				if($(myId).val().length != 11 || !(phonePattern.test($(myId).val()))) {
+					$(myId).siblings('.red').show(200);
+					$(myId).parent().removeClass('correct');
+					$(myId).parent().addClass('error');
+				} else {
+					$(myId).siblings('.red').hide(200);
+					$(myId).parent().removeClass('error');
+					$(myId).parent().addClass('correct');
+				}
+			}
+
+			function keyWarn(myId) {
+				if($(myId).val().length < 6 || $(myId).val().length > 20) {
+					$(myId).siblings('.red').show(200);
+					$(myId).parent().removeClass('correct');
+					$(myId).parent().addClass('error');
+				} else {
+					$(myId).siblings('.red').hide(200);
+					$(myId).parent().removeClass('error');
+					$(myId).parent().addClass('correct');
+				}
+			}
+
+			function codeWarn(myId) {
+				if($(myId).val() === "") {
+					$(myId).siblings('.red').show(200);
+					$(myId).siblings('.red').show(200);
+					$(myId).parent().removeClass('correct');
+					$(myId).parent().addClass('error');
+				} else {
+					$(myId).siblings('.red').hide(200);
+					$(myId).parent().removeClass('error');
+					$(myId).parent().addClass('correct');
+				}
+			}
+
+			sendCode('#code', '.user-name', '#sign-user-tel'); //绑定手机验证
+			//验证码定时器
+			function sendCode(myCode, myTel, myId) {
+				$(myCode).on('click', function() {
+					var mobile = $(this).parent().siblings(myTel).children(myId);
+					if(mobile.val().length != 11 || !(phonePattern.test(mobile.val()))) {
+						mobile.siblings('.red').show();
+						mobile.parent().removeClass('correct');
+						mobile.parent().addClass('error');
+					} else {
+						$.ajax({
+							type: 'get',
+							headers: {
+								"LoginUserToken": yzzCookieToken.getLoginUserToken()
+							},
+							url: yysConfigs.yysCentreUrl + '/yys/code/get',
+							data: {
+								"mobile": mobile.val(),
+								"serviceType": 4
+							},
+							success: function(data) {
+								if(data.code === 200) {
+									restCode();
+								} else {
+									$("body").tipAlert({
+										imgUrl: "../img/no-msg.gif",
+										cancelTipUrl: "../img/close.png",
+										title: data.msg,
+										noMsg: true
+									});
+								}
+							}
+						})
+					}
+				})
+
+				function restCode() {
+					$(myCode).hide();
+					$(myCode).siblings('.disable-btn').show();
+
+					var second = 60;
+					$(myCode).siblings('.code-date').html(second);
+					var timer = null;
+					timer = setInterval(function() {
+						second -= 1;
+						if(second > -1) {
+							$(myCode).siblings('.disable-btn').children('.code-date').html(second);
+						} else {
+							clearInterval(timer);
+							$(myCode).show();
+							$(myCode).siblings('.disable-btn').hide();
+						}
+					}, 1000)
+				}
+			}
+		</script>
+	</body>
+
+</html>

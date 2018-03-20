@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>鹰学堂-首页</title>
+		<link rel="alternate icon" type="image/png" href="https://www.yingyanso.cn/img/es.ico">
+		<link rel="stylesheet" href="css/scrollbar.css?version=18" />
+		<link rel="stylesheet" href="https://www.yingyanso.cn//css/iconfont.css?version=18" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_562085_dqaggdct6ex0qkt9.css?version=18" />
+		<link rel="stylesheet" href="css/common.css?version=18" />
+		<link rel="stylesheet" href="yingxuetang/resources/css/share.css?version=18" />
+		<link rel="stylesheet" href="css/tipAlert.css?version=18" />
+		<link rel="stylesheet" href="yingxuetang/resources/pagination/pagination.css?version=18" />
+		<link rel="stylesheet" href="yingxuetang/resources/css/common.css?version=18" />
+
+		<!--浏览器不缓存HTML-->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+
+		<link rel="stylesheet" href="yingxuetang/resources/kindeditor/themes/default/default.css?version=18" />
+		<link rel="stylesheet" href="yingxuetang/resources/kindeditor/plugins/code/prettify.css?version=18" />
+	</head>
+
+	<body>
+		<header>
+			<div id="header">
+				<div id="header-left">
+					<a href="yxt-index.html"><img src="yingxuetang/resources/images/logo.png" id="logo"> </a>
+					<a class="a" href="yxt-index.html?action=courses" class="item">课程</a>
+					<a class="a" href="yxt-index.html?action=articles" class="item">最新资讯</a>
+					<div id="shool-profile-a">
+						<a class="shool-profile" href="javascript: void(0);" class="item"><span class="a">学堂介绍</span><i class="icon iconfont icon-xiala"></i> </a>
+
+						<div id="header-profile">
+							<p>
+								<a class="a" href="yxt-index.html?action=school-index">学堂简介</a>
+							</p>
+							<p>
+								<a class="a" href="yxt-index.html?action=school-value">学堂价值</a>
+							</p>
+							<p>
+								<a class="a" href="yxt-index.html?action=school-learning">学习模式</a>
+							</p>
+							<p>
+								<a class="a" href="yxt-index.html?action=school-scope">课程范围</a>
+							</p>
+							<p>
+								<a class="a" href="yxt-index.html?action=school-notice">课程预告</a>
+							</p>
+							<p>
+								<a class="a" href="yxt-index.html?action=school-vip">VIP专区</a>
+							</p>
+						</div>
+					</div>
+					<a class="a" href="index.html" class="item">搜客户</a>
+				</div>
+
+				<div id="header-right">
+					<div id="search-div">
+						<input id="search-input" type="text" placeholder="搜索课程" srcType="0" />
+						<i class="icon iconfont icon-sousuo" title="搜索" onclick="search();"></i>
+					</div>
+					<div id="user-info">
+						<div id="user-login">
+							<a id="log-in" class="a" href="javascript: void(0);">登录</a>/
+							<a id="sign-in" class="a" href="javascript: void(0);">注册</a>
+						</div>
+
+						<div id="user-infos">
+							<img src="https://www.yingyanso.cn/img/bd_logo1.png" alt="用户头像" id="userImg" />
+							<div class="user-more">
+								<span class="user-name" id="userName"></span>
+							</div>
+							<span id="isVIP" title="VIP用户"> <i
+							class="icon iconfont icon-vip"></i> </span> <span id="jifen" title="鹰豆">
+							<i class="icon iconfont icon-douban-copy"></i> <span
+							id="jifen-num">0</span> </span> <span id="beVIP" class="to-yys-buy">未授权</span>
+							<span id="info-span"><i class="icon iconfont icon-tongzhi"></i><span
+							id="info-count">0</span> </span>
+
+							<span class="quit-box yxt-quit">
+                        <a href="javascript:void(0);" class="quit"><span>退出</span></a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div id="header-info" style="display: none;"></div>
+			</div>
+		</header>
+		<div id="main-content"></div>
+		<footer>
+			<div class="foot-wz">
+				<a href="https://www.yingyanso.cn/html/index.html?product-faq">常见问题</a>
+				<a href="https://www.yingyanso.cn/html/images/zhengshu.jpg" target="_blank">软件证书</a>
+				<a href="https://www.yingyanso.cn/html/index.html?about-friendlink">友情链接</a>
+				<script src="https://s11.cnzz.com/z_stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+				<br> <span class="f2 ">版权所有 &copy; 深圳鹰眼搜科技有限公司 <a
+				href="http://www.miibeian.gov.cn/ " target="_blank ">粤ICP备10063542号</a>
+			</span>
+			</div>
+
+			<div id="qrcode"></div>
+
+			<div id="qrcode-text">
+				欢迎关注鹰眼搜服务号<br /> 探索最先进的找客户方法
+			</div>
+		</footer>
+
+		<!--加载-->
+		<div class="yys-loading">
+			<div class="dialog-mask"></div>
+			<div class="loading-box">
+				<i class="icon iconfont icon-loading-m"></i> <span id="loading-msg">加载数据中，请稍候...</span>
+			</div>
+		</div>
+		<!--加载-->
+
+		<script type="text/javascript" src="js/json2.js?version=18?version=18"></script>
+		<script type="text/javascript" src="js/browser-ompatibility.js?version=18?version=18"></script>
+		<script type="text/javascript" src="js/jquery.min-1.10.2.js?version=18"></script>
+		<script type="text/javascript" src="js/config.js?version=18"></script>
+		<script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.5.0/aliplayer-min.js?version=18"></script>
+		<script type="text/javascript" src="js/jqpaginator.min.js?version=18"></script>
+		<script type="text/javascript" src="js/utf.js?version=18"></script>
+		<script type="text/javascript" src="js/jquery.qrcode.js?version=18"></script>
+		<script type="text/javascript" src="yingxuetang/resources/js/common-function.js?version=18"></script>
+		<script type="text/javascript" src="yingxuetang/resources/js/share.js?version=18" type="text/javascript"></script>
+		<script type="text/javascript" src="js/tipAlert.js?version=18" type="text/javascript"></script>
+		<script type="text/javascript" src="js/yys-cookie-token-1.0.js?version=18" type="text/javascript"></script>
+		<script type="text/javascript" src="js/common.js?version=18" type="text/javascript"></script>
+		<script type="text/javascript" src="yingxuetang/resources/js/index.js?version=18"></script>
+
+		<script charset="utf-8" src="yingxuetang/resources/js/common-function.js?version=18"></script>
+		<script charset="utf-8" src="yingxuetang/resources/kindeditor/kindeditor-all.js?version=18"></script>
+		<script charset="utf-8" src="yingxuetang/resources/kindeditor/kindeditor-common.js?version=18"></script>
+		<script charset="utf-8" src="yingxuetang/resources/kindeditor/plugins/code/prettify.js?version=18"></script>
+		<script charset="utf-8" src="yingxuetang/resources/kindeditor/lang/zh-CN.js?version=18"></script>
+	</body>
+
+</html>

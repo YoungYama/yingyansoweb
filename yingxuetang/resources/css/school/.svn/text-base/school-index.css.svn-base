@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{ width:1200px; height:408px; margin:0 auto; background:#f2fcff; margin-top:40px;}
+.content_img{ float:left; margin-left:124px; margin-top:96px;}
+.content_text{ float:left; width:480px; height:110px; margin-left:124px; margin-top:160px; letter-spacing:2px;}
+.content_text p{ font-size:16px; line-height:24px;}
+
+.title1{height:30px; text-align:center; margin-top:80px;}
+.title1 p{ font-size:24px; color:#878787;}
+.title1_img{height:14px; text-align:center;}
+.super{ width:1120px; height:240px; margin:auto; margin-top:80px;}
+.img{ text-align:center;}
+.super_1{ width:240px; height:320px; background:#f6f6f6; float:left; margin-left:50px;}
+.super_2{ width:240px; height:320px; background:#f6f6f6; margin-left:150px; float:left;}
+.p1{ font-size:26px; color:#4c4c4c; text-align:center; margin-top:20px;}
+.p2{ font-size:14px; color:#4c4c4c; text-align:center; margin-top:4px; letter-spacing:1px;}
+.title2{ height:30px; text-align:center; margin-top:120px;}
+.title2 p{ font-size:24px; color:#878787;}
+.title4{height:30px;text-align:center;}
+.title4 p{ font-size:18px; color:#2c2c2c; letter-spacing:0.4px;}
+
+.super_3{ text-align:center; margin-top:60px;}
+.super_3-text{ height:25px;text-align:center; margin-top:30px;}
+.super_3-text p{ font-size:16px; color:#2c2c2c; letter-spacing:0.4px;}
+.btn-xx{ border: 0; padding: 10px 20px; background-color: #0aaa8b; color: #ffffff; font-size: 16px;}
+.btn-xx-vip{ border: 0; padding: 10px 20px; background-color: #c7254e; color: #ffffff; font-size: 16px;}
+
+.banner {
+	margin-top: 140px !important;
+} 

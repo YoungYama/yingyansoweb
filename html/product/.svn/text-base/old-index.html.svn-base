@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><meta charset="UTF-8">
+<title>鹰眼搜索系统功能介绍</title>
+<link rel="alternate icon" type="image/png" href="../../img/es.ico">
+<link rel="stylesheet" href="../../css/scrollbar.css" />
+<meta name="description" content="时速鹰眼客户搜索系统以GOOGLE、YAHOO、BING、YANDX等全球主流搜索引擎为内核，使用英语、法语、俄语、德语、西班牙语、葡萄牙语、日语、韩语、波斯语、丹麦语、土尔其语、马来语等70余种语言在全球180多个国家的当地搜索引擎使用本国母语进行针对性的客户搜索，针对性更强，效果更好。还可自定义在任何网站提取您需要的信息（行业独家）！" />
+<meta name="keywords" content="时速鹰眼客户搜索系统，外贸客户开发系统，外贸软件，外贸客户开发软件，外贸客户搜索软件，外贸客户搜索系统" />
+<meta name="copyright" content="深圳鹰眼搜科技有限公司版权所有" />
+<meta name="author" content="时速鹰眼客户搜索系统" />
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel=stylesheet href="css/gn-css.css">
+<style type="text/css">
+    html{ height:100%; }
+    body{ height:100%;}
+</style>
+<script src="js/jquery.require.js" ></script>
+</head>
+
+<body class="site-es page-stable">
+  <div class="header">
+     <a href="" class="logo-outer"><img src="img/logo.png"></a>
+     <ul class="mean"><li class="M"><a href="../../index.html">搜客户 </a></li>
+     <li class="M"><a href="index.html">产品介绍</a></li>
+      <li class="M"><a href="../../buy.html">产品价格</a></li>
+     <li class="M"><a href="download.html">软件下载</a></li>
+	  <li class="M"> <a href="../about/case.html">成功案例</a></li>
+         <li class="M"> <a href="../about/index.html">关于我们</a></li>
+     <li class="M"><a href="../school/index.html">鹰学堂</a></li>
+         
+     </ul>
+  </div>
+<div id=container class="container">
+   <div id=page-ga class="page page-ga">
+       <div class="ga-con">
+            <div class="ga-wb"><span class="es-zt1">全球客户搜索</span><br>
+<span class="es-zt2">时速鹰眼客户搜索系统以GOOGLE、YAHOO、BING、YANDX等全球主流搜索引擎为内核，使用英语、法语、俄语、德语、西班牙语、葡萄牙语、日语、韩语、波斯语、丹麦语、土尔其语、马来语等70余种语言在全球180多个国家的当地搜索引擎使用本国母语进行针对性的客户搜索，针对性更强，效果更好。还可自定义在任何网站提取您需要的信息（行业独家）！
+</span></div>
+            <div  class="ga-pic pic-1">
+               <div class="ga-pic-k t1"></div>
+            </div>
+       </div>
+   </div>
+   <div id=page-gb class="page page-gb">
+        <div class="ga-con">
+            <div class="gb-wb">
+            <span class="es-zt1 black">搜索客户精准</span><br>
+<span class="es-zt2 grav">系统内置精准的垃圾信息过滤机制。可自定义过滤B2B 网站、政府部门网站、新闻娱乐网站、机构网站、国内网站、竞争对手网站、老客户网站的信息；自动过滤非目标客户邮件地址、非业务相关联系人的邮件址、垃圾信息邮件地址。保障您客户搜索的精准度。
+</span></div>
+            <div class="ga-pic  pic-2">
+                <div class="ga-pic-k t2"></div>
+            </div>
+       </div>
+   </div>
+   <div id=page-gc class="page page-gc">
+               <div class="gc-con">
+                <div class="ga-wb"><span class="es-zt1">提取信息全面</span><br>
+        <span class="es-zt2">鹰眼搜独有的技术不仅能自动抓取出客户的官方网址，电话，邮件地址等基本信息，还能同时抓取出客户的Facebook，Twitter、Pinterest、Linkedin、Google+、YouTube等社交平台账号，供您开展全网营销。 </span></div>
+                    <div  class="ga-pic pic-1">
+                         <div class="ga-pic-k t3"></div>
+                    </div>
+               </div>
+     
+   </div>
+   <div id=page-gd class="page page-gd">
+       <div class="gd-con">
+                <div class="gb-wb"><span class="es-zt1 black">邮件地址验证</span><br>
+        <span class="es-zt2 grav"> 系统内置邮件地址验证工具，可批量验证邮件地址是否存在，以保证不盲目发送开发信，更精准有效的开发客户。</span></div>
+                    <div  class="ga-pic pic-2">
+                         <div class="ga-pic-k t4"></div>
+                    </div>
+               </div>
+   </div>
+   <div id=page-ge class="page page-ge">
+        <div class="ge-con">
+                <div class="ga-wb"><span class="es-zt1">自动存储客户</span><br>
+        <span class="es-zt2">内置详尽的本地客户库，对所有搜索过的客户信息进行完整保存，并能自动除去重复信息，保证所有客户信息的唯一性。客户信息包括：客户分类、客户网站、公司名称、联系人姓名、邮件地址、国家、电话、facebook、twitter、搜索时间等详细信息。可进行分类管理，并可对客户库进行编辑、删除、修改等操作，支持批量导出成excel表格保存。
+</span></div>
+                    <div  class="ga-pic pic-1">
+                         <div class="ga-pic-k t5"></div>
+                    </div>
+               </div>
+</div>
+ <div id=page-gf class="page page-gf">
+        <div class="gf-con">
+                <div class="gb-wb"><span class="es-zt1 black">关健词分析</span><br>
+                  <span class="es-zt2 grav"> 系统内置了以GOOGLE 为内核的关健词分析工具，以Led 为例，10 分钟不到即提取到与Led 相关联的关健词399 个之多。
+</span></div>
+                    <div  class="ga-pic pic-2">
+                         <div class="ga-pic-k t6"></div>
+                    </div>
+               </div>
+</div>
+<div id=page-gg class="footer page-gg">
+       <div class="foot-wz"> <a href="faq.html">常见问题</a>  | <a href="images/zhengshu.jpg" target="_blank">软件证书</a>  |  <script src="https://s11.cnzz.com/stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+       <br> <span class="f2">版权所有 &copy; 深圳鹰眼搜科技有限公司　<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备10063542号</a></span></div>
+</div>
+ <div id="wrap_page_inspect" class="pager-wrap dn">
+    <ul class="pager-inner">
+      <li class="pager pager-0"><a href="#!p0" data-page="0" class="pager-link js-transfer-page pager-link-0">●</a></li>
+      <li class="pager pager-1"><a href="#!p1" data-page="1" class="pager-link js-transfer-page pager-link-1">●</a></li>
+      <li class="pager pager-2"><a href="#!p3" data-page="2" class="pager-link js-transfer-page pager-link-2">●</a></li>
+       <li class="pager pager-3"><a href="#!p4" data-page="3" class="pager-link js-transfer-page pager-link-3">●</a></li>
+        <li class="pager pager-4"><a href="#!p5" data-page="4" class="pager-link js-transfer-page pager-link-4">●</a></li>
+      <li class="pager pager-5"><a href="#!p6" data-page="5" class="pager-link js-transfer-page pager-link-5">●</a></li>
+      <li class="pager pager-6"><a href="#!p7" data-page="6" class="pager-link js-transfer-page pager-link-6">●</a></li>
+    </ul>
+  </div>
+</div>
+<script src="js/casa.js" ></script>
+</body>
+</html>

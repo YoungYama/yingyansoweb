@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.home{ width:1200px; min-height:20px; line-height:20px; margin:auto; margin-top:20px;}
+.home a{ margin:10px; text-decoration:none; color:#333; font-size:16px;}
+.home a:hover{ color:#3e93d4;}
+.content{ text-align:center; margin-top:35px;}
+.content_img{ width:1200px;height:426px; margin:auto; background:#edf8fe; margin-top:80px;}
+.content_img1{ float:left; margin-left:80px; margin-top:50px;}
+.content_img2{ width:468px; float:left; margin-left:80px; margin-top:100px;}
+.btn-buy{ border: 0; background-color: #c7254e;
+    color: #ffffff; padding: 10px 20px; font-size: 16px; margin-top: 20px;}

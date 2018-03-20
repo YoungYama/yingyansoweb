@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="yingxuetang/resources/css/article.css" />
+<div id="article-main-content">
+	<div id="article-header">
+		<img src="yingxuetang/resources/images/idea.png" id="logo" />
+		<span>资讯详情</span>
+	</div>
+
+	<div id="article-main">
+		<input type="hidden" id="article-id">
+		<input type="hidden" id="article-desc">
+		<input type="hidden" id="article-pic">
+		<div id="article-title">
+			<span></span>
+		</div>
+		<div id="article-content">
+
+		</div>
+		<div id="article-footer">
+			<div id="socialShare"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="yingxuetang/resources/js/article.js"></script>

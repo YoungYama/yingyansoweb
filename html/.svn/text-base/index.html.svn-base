@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>鹰眼搜</title>
+		<link rel="alternate icon" type="image/png" href="../img/es.ico">
+		<link rel="stylesheet" href="../css/scrollbar.css" />
+		<link rel="stylesheet" href="../css/html-index.css" />
+	</head>
+
+	<body id="main-container">
+		<div class="header">
+			<a href="../index.html" class="logo-outer"><img src="../img/logo.png"></a>
+			<ul class="right-ul">
+				<li>
+					<a href="../yxt-index.html?action=courses">课程</a>
+				</li>
+				<li>
+					<a href="../yxt-index.html?action=articles">资讯</a>
+				</li>
+				<li>
+					<a href="../yxt-index.html?action=school-index">鹰学堂</a>
+				</li>
+				<li>
+					<a href="../buy.html" target="_blank">成为VIP</a>
+				</li>
+				<li>
+					<a href="../softbuy.html" target="_blank">购买软件</a>
+				</li>
+				<li>
+					<a href="../html/index.html?about-case">成功故事</a>
+				</li>
+				<li>
+					<a href="../html/index.html?about-us">团队介绍</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div id="set-content">
+
+		</div>
+
+		<div class="footer">
+			<div class="foot-wz">
+				<a href="index.html?product-faq">常见问题</a>
+				<a href="images/zhengshu.jpg" target="_blank">软件证书</a>
+				<a href="index.html?about-friendlink">友情链接</a>
+				<script src="https://s11.cnzz.com/z_stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+				<br> <span class="f2 ">版权所有 &copy; 深圳鹰眼搜科技有限公司　<a href="http://www.miibeian.gov.cn/ " target="_blank ">粤ICP备10063542号</a></span>
+			</div>
+
+			<div id="qrcode"></div>
+
+			<div id="qrcode-text">
+				欢迎关注鹰眼搜服务号<br /> 探索最先进的找客户方法
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../js/jquery.min-1.10.2.js"></script>
+		<script type="text/javascript" src="../js/config.js"></script>
+		<script type="text/javascript" src="../js/yys-cookie-token-1.0.js"></script>
+		<script>
+			var url = location.href;
+			var toPage = "../html/about/index.html";
+			var page = "about-us";
+
+			var value = null;
+
+			if(url.indexOf("?") != -1) {
+				page = url.split("?")[1];
+
+				if(page.indexOf("&") != -1) {
+					var pages = page.split("&");
+					page = pages[0];
+					value = pages[1];
+				}
+
+			}
+
+			var title = "团队介绍";
+
+			switch(page) {
+				case "about-us":
+					title = "团队介绍";
+					toPage = "../html/about/index.html";
+					break;
+				case "about-culture":
+					title = "鹰文化";
+					toPage = "../html/about/culture.html";
+					break;
+				case "about-agreement":
+					title = "用户协议";
+					toPage = "../html/about/Agreement.html";
+					break;
+				case "about-privacy":
+					title = "隐私协议";
+					toPage = "../html/about/Privacy.html";
+					break;
+				case "about-partner":
+					title = "渠道合作";
+					toPage = "../html/about/partner.html";
+					break;
+				case "about-cantact":
+					title = "联系我们";
+					toPage = "../html/about/cantact.html";
+					break;
+				case "about-friendlink":
+					title = "友情链接";
+					toPage = "../html/about/Friendlink.html";
+					break;
+
+				case "about-case":
+					title = "成功案例";
+					toPage = "../html/about/case.html";
+					break;
+
+				case "school-index":
+					title = "学堂简介";
+					toPage = "../html/school/index.html";
+					break;
+				case "school-value":
+					title = "学堂价值";
+					toPage = "../html/school/value.html";
+					break;
+				case "school-learning":
+					title = "学习模式";
+					toPage = "../html/school/learning.html";
+					break;
+				case "school-scope":
+					title = "学堂范围";
+					toPage = "../html/school/scope.html";
+					break;
+				case "school-notice":
+					title = "课程预告";
+					toPage = "../html/school/notice.html";
+					break;
+				case "school-vip":
+					title = "VIP专区";
+					toPage = "../html/school/VIP.html";
+					break;
+				case "product-download":
+					title = "软件下载";
+					toPage = "../html/product/download.html";
+					break;
+				case "product-introduce":
+					title = "产品介绍";
+					toPage = "../html/product/index.html";
+					break;
+				case "product-faq":
+					title = "常见问题";
+					toPage = "../html/product/faq.html";
+					break;
+				case "authorize-login":
+					if(value == null || value.trim().length == 0) {
+						title = "团队介绍";
+						toPage = "../html/about/index.html";
+					} else {
+						yzzCookieToken.setLoginUserToken(value);
+						location.href = "../index.html";
+					}
+					break;
+				case "authorize-bind":
+					title = "手机绑定";
+					toPage = "../html/about/bind.html";
+					break;
+				case "authorize-error":
+					console.log(value);
+					title = "第三方授权登录注册失败";
+					toPage = "../html/about/error.html";
+					break;
+				default:
+					title = "团队介绍";
+					toPage = "../html/about/index.html";
+					break;
+			}
+
+			$("title").html(title);
+
+			loadPage(toPage);
+
+			function loadPage(url) {
+				$.ajax({
+					type: "get",
+					url: url,
+					async: false,
+					success: function(html) {
+						$("#set-content").html(html);
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>

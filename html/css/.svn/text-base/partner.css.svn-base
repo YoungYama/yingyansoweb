@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.content1{ width:995px; height:628px; margin:auto; margin-top:80px; background:url(../img/images/parter1_03.png);}
+.content1_text{ float:left; width:300px; height:360px; margin-top:140px; margin-left:36px;}
+.content2{ width:993px; height:633px; margin:auto; margin-top:80px; background:url(../img/images/pertner_11.png);}
+.content2_text{ float:right; width:300px; height:360px; margin-top:140px; margin-right:60px;}
+.content3{ width:1200px; margin:auto; margin-top:80px;}
+.content3_img1{ width:334px; height:387px; background:url(../img/images/pertner_17.png);float:left; margin-left:60px;}
+.content3_img2{ width:275px; height:549px; background:url(../img/images/pertner_19.png);float:left; margin-left:90px;}
+.content3_img3{ width:334px; height:387px; background:url(../img/images/pertner_21.png);float:left; margin-left:90px;}
+.imgi{ width:284px; margin-top:150px; margin-left:20px;}
+.img2{width:256px; margin-top:290px; margin-left:10px;}

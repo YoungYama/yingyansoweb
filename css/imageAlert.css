@@ -1,0 +1,36 @@
+#image-alert-body .my-image-mask {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	display: none;
+	z-index: 1000;
+}
+
+#image-alert-body #image-alert-body-close {
+	float: right;
+	padding: 8px;
+}
+
+#image-alert-body #my-image-body {
+	position: fixed;
+	z-index: 1500;
+	cursor: pointer;
+}
+
+#image-alert-body .icon-cuowu {
+	position: fixed;
+	z-index: 1501;
+	cursor: pointer;
+	color: #000000;
+	font-size: 30px;
+}
+
+#image-alert-body .icon-cuowu:hover {
+	color: #FFFFFF !important;
+}

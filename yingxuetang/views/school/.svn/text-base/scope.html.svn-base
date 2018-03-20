@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>课程范围</title>
+    <link href="yingxuetang/resources/css/school/scope.css" rel="stylesheet" type="text/css">
+    <link href="yingxuetang/resources/css/school/head-to-tail.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--content -->
+    <div class="content"><p class="h1">课程范围</p></div>
+    <div class="content2"><img src="yingxuetang/resources/images/school/scope_03.png" width="1118" height="256"></div>
+    <div class="content3">
+        <div class="content3_img">
+        <div class="content3_text"><P>
+            主动开发客户
+            邮件营销策略 
+            阿里后台操作
+            海外SEO优化 
+        </P></div>
+        <div class="content3_text2"><P>
+  客户跟进管理
+  科学盘活客户
+  社交平台营销
+  职场就业指导
+        </P></div>
+        </div>
+        
+    </div>
+
+    <div class="none"></div>
+    <!--buttom -->
+    <!--<div class="buttom">
+        <div class="buttom_nav"><a href="../product/faq.html">常见问题</a><a href="../product/images/zhengshu.jpg">软件证书</a><a href="../about/Friendlink.html" ">友情链接</a><script src="https://s11.cnzz.com/stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script></div>
+    <div class="buttom_text"><p>版权所有 © 深圳鹰眼搜科技有限公司　粤ICP备10063542号</p></div>
+    </div>-->
+</body>
+</html>

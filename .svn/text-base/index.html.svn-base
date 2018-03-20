@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>鹰眼搜-外贸人必须用的全球客户搜索引擎</title>
+
+		<meta name="description" content="鹰眼搜是集GOOGLE、YAHOO、BING、YANDX、BAIDU等全球主流搜索引擎优点于一身的纯商业搜索引擎，以搜索全球客户为已任。鹰眼搜覆盖全球70余种语言和180多个国家进行针对性的客户数据实时抓取，比常规主流搜索引擎针对性更强，效果更好、效率更高." />
+		<meta name="keywords" content="鹰眼搜,鹰眼搜索引擎,鹰眼搜索软件,免费客户搜索,免费客户开发系统,外贸客户开发系统,外贸客户搜索软件" />
+		<meta name="copyright" content="深圳鹰眼搜科技有限公司版权所有" />
+		<meta name="author" content="鹰眼搜-搜索客户的商业搜索引擎" />
+		<meta name=viewport content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta property="qc:admins" content="502416675761167116376375" />
+
+		<!--浏览器不缓存HTML-->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+
+		<link rel="alternate icon" type="image/png" href="img/es.ico">
+		<link rel="stylesheet" href="css/scrollbar.css?version=18" />
+		<link rel="stylesheet" href="css/iconfont.css?version=18" />
+		<link rel="stylesheet" href="css/index.css?version=18" />
+		<link rel="stylesheet" href="css/common.css?version=18" />
+		<link rel="stylesheet" href="css/imageAlert.css?version=18">
+		<link rel="stylesheet" href="css/tipAlert.css?version=18">
+	</head>
+
+	<body>
+		<div class="yys-main">
+			<div class="yys-header">
+				<span class="link-tel">客服电话：0755-88843705</span>
+				<ul class="product-list">
+					<li>
+						<a href="yxt-index.html?action=courses">课程</a>
+					</li>|
+					<li>
+						<a href="yxt-index.html?action=articles">资讯</a>
+					</li>|
+					<li>
+						<a href="yxt-index.html?action=school-index">鹰学堂</a>
+					</li>|
+					<li>
+						<a href="buy.html" target="_blank">成为VIP</a>
+					</li>|
+					<li>
+						<a href="softbuy.html" target="_blank">购买软件</a>
+					</li>|
+					<li>
+						<a href="html/index.html?about-case">成功故事</a>
+					</li>|
+					<li>
+						<a href="html/index.html?about-us">团队介绍</a>
+					</li>
+					<li class="sign-btn">
+						<a href="javascript:void(0);" id="log-in"><i class="icon iconfont icon-denglu1"></i> 登录
+						</a>
+						<a href="javascript:void(0);" id="sign-in"><i class="icon iconfont icon-zhuce1"></i> 免费注册
+						</a>
+					</li>
+					<li class="user-info">
+						<img src="img/bd_logo1.png" alt="用户头像" id="userImg" />
+						<div class="user-more">
+							<span class="user-name" id="userName"></span>
+							<!--<span class="welc-user">欢迎登录鹰眼搜</span>-->
+						</div>
+						<span id="isVIP" title="VIP用户">
+                    	<i class="icon iconfont icon-vip"></i>
+                    </span>
+						<span id="jifen" title="鹰豆">
+                    	<i class="icon iconfont icon-douban-copy"></i>
+                    	<span id="jifen-num">0</span>
+						</span>
+						<span id="beVIP">未授权</span>
+						
+						<!--<span id="info-span"><i class="icon iconfont icon-tongzhi"></i><span
+							id="info-count">0</span> </span>-->
+						
+						<span class="quit-box">
+                        <a href="javascript:void(0);" class="quit"><span>退出</span></a>
+						</span>
+					</li>
+				</ul>
+				
+				<div id="header-info"></div>
+			</div>
+			<div class="yys-content">
+				<div class="yys-logo">
+					<a href="index.html"><img src="img/bd_logo1.png" title="鹰眼搜" class="logo-img" /></a>
+				</div>
+				<div class="yys-search-bar">
+					<div class="search-tip-div">
+						<ul class="search-tip">
+							<li class="active">搜客户</li>
+							<li>搜联系方式</li>
+							<li>验邮箱</li>
+							<!--<li>搜文档</li>
+							<li>搜图片</li>-->
+						</ul>
+					</div>
+					<div class="search-input">
+						<input autofocus="autofocus" type="text" id="search-text" placeholder="当选择国家时，请输入本土语言关键词搜索效果更佳" />
+						<a href="javascript:void(0);" class="search-btn" id="searchBtnIndex">鹰眼一下</a>
+						<span class="sc-warn">
+                        搜索内容不能为空！
+                    </span>
+					</div>
+				</div>
+
+				<div class="search-other">
+					<div><img src="img/index-play.png">
+						<a href="yxt-index.html" class="to-yxt-a">查看教学视频</a>
+					</div>
+					<div><img id="cart" src="img/index-cart.png">
+						<a href="buy.html" target="_blank">立即成为鹰眼搜会员</a>
+					</div>
+				</div>
+
+				<!--<div class="search-warn" id="yys-language">
+					<span>
+                    yingyanso.cn提醒当前使用的是：
+                </span>
+					<select name="typeid" id="countryName">
+						<option value="null">通用引擎</option>
+					</select>
+				</div>-->
+			</div>
+			<!--<div class="yys-footer">
+				<ul>
+					<li>
+						<a href="html/index.html?product-faq" title="常见问题">常见问题</a>
+					</li>
+					<li>
+						<a href="html/images/zhengshu.jpg" title="软件证书" target="_blank">软件证书</a>
+					</li>
+					<li>
+						<a href="html/index.html?about-friendlink" title="友情链接">友情链接</a>
+					</li>
+					<li>
+						<script src="https://s11.cnzz.com/z_stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+					</li>
+				</ul>
+				<span>版权所有 &copy; 深圳鹰眼搜科技有限公司　<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备10063542号</a></span>
+			</div>-->
+
+			<div class="yys-powers">
+				<div class="yys-powers-pic">
+					<div class="one-power-pic">
+						<div class="one-pic-div">
+							<img src="img/power/1.png" />
+						</div>
+						<div class="pic-other">
+							<div>48节</div>
+							<div class="pic-other-2">主动开发课程</div>
+						</div>
+					</div>
+
+					<div class="one-power-pic">
+						<div class="one-pic-div">
+							<img src="img/power/2.png" />
+						</div>
+						<div class="pic-other">
+							<div>视频</div>
+							<div class="pic-other-2">不限次回放</div>
+						</div>
+					</div>
+
+					<div class="one-power-pic">
+						<div class="one-pic-div">
+							<img src="img/power/4.png" />
+						</div>
+						<div class="pic-other">
+							<div>客户</div>
+							<div class="pic-other-2">1200条精准客户</div>
+						</div>
+					</div>
+
+					<div class="one-power-pic">
+						<div class="one-pic-div">
+							<img src="img/power/5.png" />
+						</div>
+						<div class="pic-other">
+							<div>VIP群</div>
+							<div class="pic-other-2">学习交流</div>
+						</div>
+					</div>
+
+					<div class="one-power-pic">
+						<div class="one-pic-div">
+							<img src="img/power/6.png" />
+						</div>
+						<div class="pic-other">
+							<div>VIP线下交流</div>
+							<div class="pic-other-2">线下分享学习</div>
+						</div>
+					</div>
+
+					<div class="one-power-pic">
+						<div class="one-pic-div">
+							<img src="img/power/7.png" />
+						</div>
+						<div class="pic-other">
+							<div>广交会名录</div>
+							<div class="pic-other-2">实时更新</div>
+						</div>
+					</div>
+
+					<div class="one-power-pic">
+						<div class="one-pic-div">
+							<img src="img/power/3.png" />
+						</div>
+						<div class="pic-other">
+							<div>9折起</div>
+							<div class="pic-other-2">购买相关产品</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="yys-powers-head">
+					<div>鹰眼搜能给你带来什么？</div>
+					<div>不仅仅能找到客户，还能学习到搜索技巧</div>
+				</div>
+			</div>
+
+			<div id="yys-web">
+				<div id="yys-web-1" class="yys-web-div yys-web-div1">
+					<div class="web-main">
+						<div class="yys-web-img">
+							<img class="img" src="img/index-2.jpg">
+						</div>
+
+						<div class="yys-web-text">
+							<span class="title">鹰学堂学会用最聪明的方法找客户</span>
+							<br>
+							<span>鹰学堂是鹰眼搜旗下的课程平台，为鹰眼搜会员持续提供外贸服务。鹰学堂课程
+主要集中在客户开发部分，把找客户这一件事，做深，做细。在这里你可以学
+到最完整的客户搜索技巧，关键词分析方法，以及外贸领域最前沿的找客户方式。</span>
+						</div>
+					</div>
+				</div>
+				<div id="yys-web-2" class="yys-web-div yys-web-div2">
+					<div class="web-main">
+						<div class="yys-web-text">
+							<span class="title">全球客户搜索，海量数据源</span>
+							<br>
+							<span>鹰眼搜不仅以GOOGLE、YAHOO、BING、YANDX等全球主流搜索引擎为
+内核，还通过各国的黄页，B2B平台，Linkedin，Facebook等社交平台搜索
+联系方式，全方位帮您抓取客户信息。搜索信息数量更多，更全面。</span>
+						</div>
+
+						<div class="yys-web-img">
+							<img class="img" src="img/index-3.png">
+						</div>
+					</div>
+				</div>
+				<div id="yys-web-3" class="yys-web-div yys-web-div3">
+					<div class="web-main">
+						<div class="yys-web-img">
+							<img class="img" src="img/index-1.png">
+						</div>
+
+						<div class="yys-web-text">
+							<span class="title">专属VIP交流群，实时互动交流</span>
+							<br>
+							<span>专属VIP交流群为会员提供交流平台，交流最有效的找客户方法，解答使用鹰眼搜
+遇到的任何问题，同时外贸中的疑惑也可以相互进行讨论。更新鹰学堂最新的课程
+预告。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="yys-to-buy">
+				<div class="div">每天都有50000+外贸人在使用鹰眼搜</div>
+				<div class="div">这一次，客户与你的距离又近了一步</div>
+				<div>
+					<a href="buy.html" target="_blank"><span>成为会员，立即使用</span></a>
+				</div>
+			</div>
+
+			<div class="yys-footer-2">
+				<div class="foot-wz">
+					<a href="html/index.html?product-faq">常见问题</a>
+					<a href="html/images/zhengshu.jpg" target="_blank">软件证书</a>
+					<a href="html/index.html?about-friendlink">友情链接</a>
+					<script src="https://s11.cnzz.com/z_stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+					<br> <span class="f2 ">版权所有 &copy; 深圳鹰眼搜科技有限公司　<a href="http://www.miibeian.gov.cn/ " target="_blank ">粤ICP备10063542号</a></span>
+				</div>
+
+				<div id="qrcode"></div>
+
+				<div id="qrcode-text">
+					欢迎关注鹰眼搜服务号<br /> 探索最先进的找客户方法
+				</div>
+			</div>
+		</div>
+
+		<div class="yys-view-img">
+			<div class="dialog-mask"></div>
+			<div class="img-box">
+				<img src="html/images/chanpin/kehuku.png" class="img" />
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="js/json2.js?version=18"></script>
+	<script type="text/javascript" src="js/browser-ompatibility.js?version=18"></script>
+	<script type="text/javascript" src="js/jquery.min-1.10.2.js?version=18"></script>
+	<script type="text/javascript" src="js/config.js?version=18"></script>
+	<script type="text/javascript" src="js/imageAlert.js?version=18"></script>
+	<script type="text/javascript" src="js/tipAlert.js?version=18"></script>
+	<script type="text/javascript" src="js/yys-cookie-token-1.0.js?version=18"></script>
+	<script type="text/javascript" src="js/utf.js?version=18"></script>
+	<script type="text/javascript" src="js/jquery.qrcode.js?version=18"></script>
+	<script type="text/javascript" src="js/common.js?version=18"></script>
+	<script type="text/javascript" src="js/show-bind-qrcode.js?version=18"></script>
+	<script type="text/javascript" src="js/div-drag.js?version=18"></script>
+	<script type="text/javascript" src="js/index.js?version=18"></script>
+
+</html>

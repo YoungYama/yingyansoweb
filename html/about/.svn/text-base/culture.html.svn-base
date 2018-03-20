@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>鹰文化-鹰眼搜</title>
+    <link href="css/culture.css" rel="stylesheet" type="text/css">
+    <link href="css/popular.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--top -->
+<div class="top2">
+			<div class="top2_nav"><span class="nav_lev"><a href="index.html?about-us">团队介绍</a></span>|<span class="nav_lev1"><a
+            href="index.html?about-culture">鹰文化</a></span>|<span class="nav_lev1"><a href="index.html?about-agreement">用户协议</a></span>|<span class="nav_lev1"><a href="index.html?about-privacy">隐私协议</a></span>|<span class="nav_lev1"><a href="index.html?about-partner">渠道合作</a></span>|<span class="nav_lev1"><a
+            href="index.html?about-cantact">联系我们</a></span></div>
+		</div>
+
+<!--content -->
+<div class="content"><img src="img/images/culture_03.png" width="1206" height="76"></div>
+<div class="content1">
+    <div class="content1_text">
+        <P>
+            华夏民族的鹰文化，最早可以追溯到原始社会的图腾崇拜。鹰是神的化身，在中国数千年的历史长河中，鹰被赋予了神秘的色彩，在古代军事上，鹰是战神，是英雄和胜利的象征。中国古代关于鹰的神话传说和诗文篇章，都赋予其深刻的思想感情和丰富的文化内涵。鹰的形象，超凡脱俗、崇高臻至，代表的是王者风范和无畏气概。</P>
+        <P>&nbsp;</P>
+        <p></p>
+        <p>
+            南北朝刘勰《文心雕龙》中说道：“翾翥百步,肌丰而力沉也;翰飞戾天,骨劲而气猛也。”鹰的力量、速度和不凡气质跃然纸上，神采飞扬。先秦庄子用浪漫主义手法塑造了鹰的理想化身大鹏，其文曰：“鼓风击水三千里，奋翼乘狂飙，升腾九万里高空，壮哉大鹏！”更是体现了鹰形象叱咤风云、惊心动魄的宏壮之美。</p>
+        <p>&nbsp;</p>
+        <p>
+            虽然，任何事物皆有其两面性，鹰在某些场景中，也有其负面的形象，比如成语的犬牙鹰爪、鹰犬之才等。但是，瑕不掩瑜，鹰的体态强健、视野开阔、目标明确、行动迅捷、意志坚强、英勇无畏。在中国现代社会的发展潮流中，鹰形象是力量、速度、远见、英勇的化身，代表的是高瞻远瞩、大展宏图和修身励志、自强不息的正面能量。</p>
+        <p>&nbsp;</p>
+        <p>
+            科飞时速是鹰文化的忠实拥趸，也是鹰文化的笃行者，我们栉风沐雨，砥砺前行，我们修身励志、自强不息，我们十数年磨一剑，深研广调、精雕细琢、精益求精，不断地改进和完善自己，铸造了以鹰眼搜为代表的卓越品牌，在外贸客户开发领域，鹰眼搜已经名动天下，深受用户喜爱，成为用户广为传诵的明星品牌。 </p>
+        <p>&nbsp;</p>
+        <p>
+            我们审时度势、高瞻远瞩。我们在邮件领域深耕十几载，对邮件技术及其应用有着极为丰富的经验，同时，我们与客户一道，自始至终都奋战在外贸一线，对外贸变革和发展有着非常深刻的认识。我们是主动开发客户的倡导者和先行者，目前的外贸形势，对大多数中小型企业而言，除了传统渠道的应用，主动开发客户是大势所趋，我们从多年前就开始研发主动开发客户的产品――鹰眼搜和易外销，正是基于这种判断。事实证明，这就是前瞻和远见。</p>
+        <p>&nbsp;</p>
+        <p>
+            我们实战为本、摒弃浮华。我们的目标非常明确，所有的努力和付出，都是为了一个共同的目标，打造简单便利的主动式客户开发平台以及建立良好的培训服务体系，除了产品好用，还要保障客户能够用好，成就客户价值。我们拒绝虚无缥缈、艰涩不明的纯理论化设计，我们的产品以用户需求为导向，从产品研发到培训服务，都围绕用户的实战应用来开展，正如鹰的成长，健其体、丰其翼、利其爪，方可临战不惧，一击见功。 </p>
+        <p>&nbsp;</p>
+        <P> 我们蓄势以待、浩气摩云。通过多年的积累和沉淀，科飞时速已经完成了从雏鹰到雄鹰的质变，我们已经屹立在一个全新的高度，在这个高度上，我们的使命更大，我们的责任也更大！
+            “大鹏一日同风起，扶摇直上九万里。”这是我们梦寐以求的理想，也是我们全力以赴的目标！未来的岁月，我们将一如既往，以强大的产品为基石，以优质的服务为己任，开疆拓土，遨游天地！ </P>
+    </div>
+</div>
+
+<!--buttom -->
+<!--<div class="buttom">
+    <div class="buttom_nav"><a href="../product/faq.html">常见问题</a><a href="../product/images/zhengshu.jpg">软件证书</a><a href="Friendlink.html" ">友情链接</a><script src="https://s11.cnzz.com/stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script></div>
+    <div class="buttom_text"><p>版权所有 © 深圳鹰眼搜科技有限公司　粤ICP备10063542号</p></div>
+</div>-->
+</body>
+</html>

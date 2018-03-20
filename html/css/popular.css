@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+ul li{ list-style:none;}
+img{ cursor:pointer;}
+a{text-decoration:none; color:#6A6A78;font-family:"微软雅黑";}
+a:hover{ color:#03F;cursor:pointer;}
+p{font-family:"微软雅黑";}
+
+.content{ text-align:center; margin-top:80px;}
+.top{ width:100%; height:80px; background:#d8e9f6;}
+.top1{ width:1200px; height:80px; margin:0 auto; font-size:16px;}
+.top_nav{ float:right; line-height:80px;}
+.top_nav a{ margin:10px; text-decoration:none; color:#333;} 
+.top_nav a:hover{ color:#3e93d4;}
+.top2{ width:1200px; height:40px; margin:0 auto; font-size:14px;}
+.top2_nav{ float:left;}
+.top2_nav a{ margin:10px; text-decoration:none; color:#333;} 
+.top2_nav a:hover{ color:#3e93d4;}
+.nav_lev{ width:86px; height:45px; line-height:45px;}
+.nav_lev1{ width:86px; height:45px; line-height:45 px;}
+
+.banner{ width:1200px; margin:0 auto;}
+
+.h1{ font-size:40px; color:#5ac3ff;}
+
+.none{ clear:both;}
+
+.buttom{ width:100%; height:100px; margin-top:100px; background:#65bcff;}
+.buttom_nav{text-align:center; line-height:60px;}
+.buttom_nav a{ margin:18px; text-decoration:none; color:#FFF;} 
+.buttom_nav a:hover{ color:#3e93d4;}
+.buttom_text{ text-align:center;}
+.buttom_text p{color:#FFF;}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+.home{ width:1200px; min-height:20px; line-height:20px; margin:auto; margin-top:20px;}
+.home a{ margin:10px; text-decoration:none; color:#333; font-size:16px;}
+.home a:hover{ color:#3e93d4;}
+.content{ text-align:center; margin-top:35px;}
+.content1{ width:1200px; margin:auto; margin-top:60px;}

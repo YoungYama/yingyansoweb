@@ -1,0 +1,751 @@
+ul,
+p,
+input {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", arial, sans-serif;
+}
+
+.main {
+	position: relative;
+	min-width: 800px;
+}
+
+.main .buy-header {
+	color: #2C2C2C;
+	text-align: center;
+	background-color: #3453a3;
+	padding: 20px 0 30px;
+}
+
+.main .buy-header .logo {
+	color: #fff;
+	font-size: 40px;
+}
+
+.main .buy-header ul {
+	width: 446px;
+	margin-top: 20px;
+	background-color: #fff;
+	display: inline-block;
+}
+
+.main .buy-header ul li {
+	font-size: 12px;
+	display: inline-block;
+	padding: 10px 20px;
+	width: 30%;
+	color: #555;
+}
+
+.main .buy-header .product-list {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	color: #fff;
+}
+
+.main .buy-header .product-list .sign-btn {
+	margin-left: 30px;
+}
+
+.main .buy-header .product-list .sign-btn a {
+	color: #fff;
+	margin-left: 20px;
+}
+
+.main .buy-header .product-list .sign-btn a:hover {
+	text-decoration: underline;
+}
+
+.main .buy-header .product-list .sign-btn a i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -3px;
+	margin-right: 3px;
+	font-size: 18px;
+}
+
+.main .buy-header .product-list .user-info {
+	display: none;
+	margin-left: 30px;
+}
+
+.main .buy-header .product-list .user-info img {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+.main .buy-header .product-list .user-info .user-more {
+	vertical-align: middle;
+	line-height: 16px;
+	display: inline-block;
+}
+
+.main .buy-header .product-list .user-info .user-more .user-name {
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.main .buy-header .product-list .quit-box span {
+	color: #FFFFFF;
+}
+
+.product-list {
+	font-size: 12px;
+}
+
+.main .buy-header .product-list .quit-box {
+	padding: 0 10px;
+}
+
+.main .buy-header .product-list .quit-box i {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main .buy-header .product-list .quit-box span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main .buy-header .product-list .quit-box span:hover {
+	text-decoration: underline;
+}
+
+.main .buy-content {
+	text-align: center;
+	width: 840px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.main .buy-content .vipNum {
+	text-align: center;
+}
+
+.main .buy-content .vipNum .vipNum-title {
+	font-size: 20px;
+	color: #3453a3;
+}
+
+.main .buy-content .vipNum .vipNum-box {
+	color: #3453a3;
+	font-size: 24px;
+	line-height: 39px;
+	margin-top: 15px;
+}
+
+.main .buy-content .vipNum .vipNum-box .user-num {
+	padding: 5px 10px;
+	background-color: #e2e6f1;
+	border-radius: 6px;
+	position: relative;
+}
+
+.main .buy-content .vipNum .vipNum-box .user-num:after {
+	content: "";
+	width: 28px;
+	display: inline-block;
+	border: 1px solid #e2e6f1;
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+
+.main .buy-content .vipPrice .icon-cuo{
+	font-weight: bold;
+}
+
+.main .buy-content .vipPrice {
+	margin-top: 45px;
+}
+
+.main .buy-content .vipPrice ul {
+	position: relative;
+	margin-right: -28px;
+}
+
+.main .buy-content .vipPrice ul .infoBox {
+	position: relative;
+	padding: 10px 20px;
+	border: 1px solid #9cb7ff;
+	width: 30%;
+	float: left;
+	margin-right: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.main .buy-content .vipPrice ul .infoBox:hover {
+	box-shadow: 0px 0px 10px 2px #709ff4 inset;
+}
+
+.main .buy-content .vipPrice ul .infoBox:hover .priceCheck {
+	color: #fe5d03!important;
+}
+
+.main .buy-content .vipPrice ul .infoBox:hover>.priceCheck {
+	color: #fe5d03;
+}
+
+.main .buy-content .vipPrice ul .infoBox>span h3 {
+	color: #5d8aff;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.main .buy-content .vipPrice ul .infoBox>span p {
+	color: #bac5fb;
+	font-size: 12px;
+}
+
+.main .buy-content .vipPrice ul .infoBox .vipInfo {
+	font-size: 12px;
+	width: 100%;
+}
+
+.main .buy-content .vipPrice ul .infoBox .vipInfo li {
+	margin-top: 5px;
+	padding: 5px 0;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+.main .buy-content .vipPrice ul .infoBox .vipInfo li .vip-info-title {
+	float: left;
+}
+
+.main .buy-content .vipPrice ul .infoBox .vipInfo li .vip-info-ans {
+	float: right;
+}
+
+.main .buy-content .vipPrice ul .infoBox .myPrice {
+	color: #fe5d03;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 15px 0;
+	display: inline-block;
+}
+
+.main .buy-content .vipPrice ul .infoBox .myPrice .unit {
+	font-size: 14px;
+}
+
+.main .buy-content .vipPrice ul .infoBox .priceCheck {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 30px;
+	color: #999;
+}
+
+.main .buy-content .vipPrice ul .info1-disabled {
+	display: none;
+	cursor: not-allowed;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ccc;
+	opacity: 0.5;
+	width: 260px;
+	height: 503px;
+}
+
+.main .buy-content .vipPrice ul .info2-disabled {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ccc;
+	opacity: 0.5;
+	width: 260px;
+	height: 503px;
+	cursor: not-allowed;
+	left: 286px;
+}
+
+.main .buy-content .vipPrice ul .info3-disabled {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ccc;
+	opacity: 0.5;
+	width: 260px;
+	height: 503px;
+	cursor: not-allowed;
+	left: 571px;
+}
+
+.main .buy-content .vipPrice .selected {
+	box-shadow: 0px 0px 10px 1px #709ff4 inset;
+}
+
+.main .buy-content .vipPrice .selected .priceCheck {
+	color: #fe5d03!important;
+}
+
+.main .buy-content .buyButton {
+	margin-top: 85px;
+	margin-bottom: 40px;
+	display: inline-block;
+	border: 1px solid #fe5d03;
+	width: 230px;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 40px;
+	color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+	background-color: #ff6100;
+}
+
+.main .buy-content .buyButton:hover {
+	background: #e45607;
+}
+
+.main .buy-content .buyButton span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.main .buy-content .buyButton .arrow-right {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	background-size: contain;
+	background-image: url("../img/arrow-right.png");
+	background-repeat: no-repeat;
+}
+
+.main .buy-content .client-buyState {
+	height: 170px;
+	overflow: hidden;
+	border: 1px solid #9cb7ff;
+}
+
+.main .buy-content .client-buyState .info-box {
+	height: 114px;
+	overflow: hidden;
+	margin: 30px 20px;
+}
+
+.main .buy-content .client-buyState ul li {
+	font-size: 12px;
+	display: inline-block;
+	padding: 10px 0;
+	width: 32%;
+}
+
+.main .buy-content .vipService {
+	margin-top: 50px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.main .buy-content .vipService .service-power {
+	display: inline-block;
+	float: left;
+}
+
+.main .buy-content .vipService .yys-tel {
+	margin-top: 25px;
+	display: block;
+	clear: both;
+	text-align: left;
+}
+
+.main .buy-content .vipService ul {
+	float: left;
+}
+
+.main .buy-content .vipService ul li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.main .buy-content .vipService ul li .yys-brand {
+	font-size: 17px;
+	vertical-align: middle;
+	color: #3453a3;
+	position: relative;
+	top: -2px;
+	left: -4px;
+}
+
+.main .go {
+	display: inline-block;
+	width: 236px;
+	height: 171px;
+	position: absolute;
+	right: 0;
+	top: 245px;
+	background-image: url(../img/go.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.main .yys-footer {
+	clear: both;
+	font-size: 12px;
+	margin-top: 20px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+	min-width: 1000px;
+	color: #fff;
+	background-color: #3453A3;
+}
+
+.main .yys-footer ul {
+	margin-bottom: 10px;
+}
+
+.main .yys-footer ul li {
+	display: inline-block;
+	margin-left: 70px;
+}
+
+.main .yys-footer ul li:first-child {
+	margin-left: 0;
+}
+
+.main .yys-footer a {
+	color: #fff;
+}
+
+.main .yys-footer a:hover {
+	text-decoration: underline;
+}
+
+.payLayer {
+	display: none;
+	position: fixed;
+	z-index: 997;
+}
+
+.payLayer .dialog-mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(51, 51, 51, 0.6);
+}
+
+.payLayer .pay-content .icon-qian {
+	font-size: 62px;
+	color: #ffbe2b;
+}
+
+.payLayer .pay-content {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	/*margin-left: -200px;
+	margin-top: -150px;*/
+	background-color: #fff;
+	width: 400px;
+	height: 400px;
+	padding: 30px 20px;
+	border-radius: 4px;
+	text-align: center;
+	z-index: 500;
+}
+
+.payLayer #wx-pay-qr {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	background-color: #fff;
+	width: 400px;
+	height: 450px;
+	padding: 10px 10px;
+	border-radius: 4px;
+	text-align: center;
+	z-index: 500;
+}
+
+.payLayer #wx-pay-qr #wx-pay-tip {
+	padding: 20px 10px;
+}
+
+.payLayer #wx-pay-qr #wx-pay-qr-img {
+	width: 330px;
+	height: 330px;
+	margin: auto;
+	margin-top: 8px;
+}
+
+.payLayer .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #666;
+	cursor: pointer;
+}
+
+.payLayer .close:hover {
+	color: #333;
+}
+
+.payLayer .pay-content .loading {
+	display: none;
+}
+
+.payLayer .pay-content .loading .dialog-mask2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #ccc;
+	opacity: 0.6;
+}
+
+.payLayer .pay-content .loading i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: #666;
+	font-size: 80px;
+	margin-top: -40px;
+	margin-left: -40px;
+	animation: loading 2s infinite linear;
+}
+
+@keyframes loading {
+	from {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.payLayer .pay-content .pay-title {
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.payLayer .pay-content .money-num {
+	display: inline-block;
+	width: 100%;
+	padding: 15px;
+	padding-bottom: 23px;
+	font-size: 33px;
+	color: #3453a3;
+}
+
+
+/*.payLayer .pay-content .pay-methods{
+	margin: auto 20px;
+}*/
+
+.payLayer .pay-content .pay-methods .pSelected {
+	border: 2px solid;
+	padding: 4px 4px 0 4px;
+	border-radius: 15px;
+}
+
+.payLayer .pay-content .pay-methods .weChat {
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+
+.payLayer .pay-content .pay-methods .weChat .icon-weixin {
+	font-size: 66px;
+	color: #11ac36;
+	cursor: pointer;
+	border-color: #11ac36;
+}
+
+.payLayer .pay-content .pay-methods .weChat .icon-weixin:hover {
+	border: 2px solid;
+	padding: 4px 4px 0 4px;
+	border-radius: 15px;
+}
+
+.payLayer .pay-content .pay-methods .weChat .active {
+	border: 2px solid;
+	padding: 4px 4px 0 4px;
+	border-radius: 15px;
+}
+
+.payLayer .pay-content .pay-methods .weChat .icon-xuanze {
+	display: none;
+	position: absolute;
+	bottom: 130px;
+	right: 262px;
+	color: #cd3a18;
+}
+
+.payLayer .pay-content .pay-methods .weChat span {
+	width: 100%;
+	display: inline-block;
+}
+
+.payLayer .pay-content .pay-methods .aliPay {
+	display: inline-block;
+	width: 50%;
+}
+
+.payLayer .pay-content .pay-methods .aliPay .icon-zhifubao {
+	font-size: 66px;
+	color: #1296db;
+	cursor: pointer;
+}
+
+.payLayer .pay-content .pay-methods .aliPay .icon-zhifubao:hover {
+	border: 2px solid;
+	padding: 4px 4px 0 4px;
+	border-radius: 15px;
+}
+
+.payLayer .pay-content .pay-methods .aliPay .active {
+	border: 2px solid;
+	padding: 4px 4px 0 4px;
+	border-radius: 15px;
+}
+
+.payLayer .pay-content .pay-methods .aliPay .icon-xuanze {
+	display: none;
+	position: absolute;
+	right: 82px;
+	bottom: 130px;
+	color: #cd3a18;
+}
+
+.payLayer .pay-content .pay-methods .aliPay span {
+	width: 100%;
+	display: inline-block;
+}
+
+.payLayer .pay-content #payBtn {
+	border: 1px solid #4ea8d3;
+	cursor: pointer;
+	background: #4ea8d3;
+	color: #fff;
+	margin-top: 30px;
+	display: inline-block;
+	padding: 12px 30px;
+	border-radius: 40px;
+}
+
+.payLayer .pay-content #payBtn:hover {
+	background-color: #216faf;
+}
+
+.dialog-mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(51, 51, 51, 0.6);
+}
+
+.vipNum-box .flip {
+	margin: 0 auto;
+	width: 500px;
+	height: 40px;
+	color: #3453a3;
+	margin-left: 311px;
+}
+
+.vipNum-box .price-div>div,
+.vipNum-box .total-price>div {
+	float: left;
+	text-align: center;
+}
+
+.vipNum-box .price-div .number {
+	width: 34px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 24px;
+	overflow: hidden;
+	margin-right: 1px;
+	background-color: #e2e6f1;
+	border-radius: 6px;
+	margin-right: 8px;
+}
+
+.vipNum-box .price-div .sign {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 68px;
+	height: 39px;
+	margin-right: 8px;
+}
+
+.vipNum-box .price-div .hide {
+	display: none;
+}
+
+#coin-help{
+	font-size: 14px;
+    color: #fe5d03;
+    position: relative;
+    top: -155px;
+}
+
+#coin-help a{
+	color: #fe5d03;
+}
+
+#coin-help a:hover{
+	color: #ffad7e;
+}
+
+#cut-money {
+	display: none;
+    color: #2fb54f !important;
+    font-size: 14px !important;
+}
+
+.right-tip-div{
+	bottom: 183px !important;
+}

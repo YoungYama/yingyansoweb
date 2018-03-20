@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="yingxuetang/resources/css/courses.css" />
+
+<div id="courses-main">
+	<div id="courses-left">
+		<div id="courses-left-title">
+			<a href="yxt-index.html">首页</a><i class="icon iconfont icon-tubiao-"></i><span id="show-type">全部课程</span>
+		</div>
+
+		<div id="courses-left-type">
+			<div id="courses-left-type1">
+				<span type="-1" class="active">全部</span>
+				<span type="1">公开课程</span>
+				<span type="0">VIP课程</span>
+			</div>
+			<div id="courses-left-type2">
+				
+			</div>
+		</div>
+
+		<div id="courses-left-sort">
+			<span title="按课程更新时间升序排序" sort="DESC" type="time">最新</span>
+			<span title="按课程热门程度降序排序" sort="ASC" type="hot">热门</span>
+		</div>
+
+		<div id="courses-left-list">
+			
+		</div>
+
+		<div id="courses-left-page">
+			<div class="page-box m-style"></div>
+		</div>
+	</div>
+	<div id="courses-right">
+		
+	</div>
+</div>
+
+<script type="text/javascript" src="yingxuetang/resources/js/courses.js"></script>

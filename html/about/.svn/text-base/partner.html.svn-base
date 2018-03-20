@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>渠道合作--鹰眼搜</title>
+    <link href="css/partner.css" rel="stylesheet" type="text/css"/>
+    <link href="css/popular.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+<!--
+.style1 {color: #FF0000}
+.style2 {font-size: 18px}
+-->
+    </style>
+</head>
+
+<body>
+<!--top -->
+<div class="top2">
+			<div class="top2_nav"><span class="nav_lev"><a href="index.html?about-us">团队介绍</a></span>|<span class="nav_lev1"><a
+            href="index.html?about-culture">鹰文化</a></span>|<span class="nav_lev1"><a href="index.html?about-agreement">用户协议</a></span>|<span class="nav_lev1"><a href="index.html?about-privacy">隐私协议</a></span>|<span class="nav_lev1"><a href="index.html?about-partner">渠道合作</a></span>|<span class="nav_lev1"><a
+            href="index.html?about-cantact">联系我们</a></span></div>
+		</div>
+
+<!--content -->
+<div class="content"><img src="img/images/pertner_03.png" width="1206" height="76"/></div>
+<div class="content1">
+    <div class="content1_text">
+        <p style="font-size:24px;">鹰眼搜可为合作伙伴提供</p>
+        <p style="font-size:18px; margin-top:120px; letter-spacing:2px;">产品培训<br/>
+            销售培训<br/>
+            产品资料<br/>
+            会议营销<br/>
+            其他支持服务<br/>
+            不断强大的“鹰眼搜”品牌支持<br/>
+            不断投入各类广告、展会<br/>
+            加大外贸客户对鹰眼搜品牌的认知</p>
+    </div>
+</div>
+
+<div class="content2">
+    <div class="content2_text"><p style="font-size:18px; margin-top:20px;letter-spacing:2px; line-height:70px;">
+        阿里巴巴第三方运营服务商<br/>
+        外贸网站建设与网络推广服务商<br/>
+        外贸有关的软件服务商<br/>
+        国际物流、货代<br/>
+        外贸课程培训机构<br/>
+    </p></div>
+</div>
+
+<div class="content"><img src="img/images/pertner_14.png" width="993" height="76"/></div>
+<div class="content3">
+    <div class="content3_img1">
+        <div class="imgi">
+            <p style=" font-size:18px;">广州市双拾壹网络科技有限公司</p>
+            <p style="font-size:16px; margin-top:5px;">阿里巴巴认证第三方</p>
+            <p style="font-size:14px; margin-top:26px;">自公司成立以来，一直以 “为客户带来实在价值 ”为经营理念，以 “用心主动、简单快速
+                ”为经营准则，致力于为客户打造电商时代全方位的服务方式。专注外贸电商运营服务：通过阿里巴巴国际站、速卖通、ebay等外贸销售渠道，打开国际市场，创收外贸销售业绩！
+            </p>
+        </div>
+    </div>
+
+    <div class="content3_img2">
+        <div class="img2">
+            <p style="font-size:18px;">百搜（中国）有限公司</p>
+            <p style="font-size:16px; margin-top:5px;">阿里巴巴C拍挡服务商</p>
+            <p style="font-size:14px; margin-top:10px;">
+                阿里巴巴第一批第三方服务商，阿里C拍挡，龙岗最佳外贸服务商。两位合伙人均为阿里巴巴5年以上老员工，致力于国际站客户的平台培训，旺铺装修，整站托管，直通车带操，画册设计以及营销官网的外贸一站式服务，2012年成立以来，带领团队给于深圳客户一流的品质服务！对接龙华，龙岗，宝安，深圳市区多支大P团队，服务各区域圈战，商圈运营。
+
+            </p>
+        </div>
+    </div>
+    <div class="content3_img3">
+        <div class="imgi">
+            <p style=" font-size:18px;">杭州美连网络科技有限公司</p>
+            <p style="font-size:16px; margin-top:5px;">阿里巴巴认证第三方</p>
+            <p style="font-size:14px; margin-top:26px;">自杭州美连网络科技有限公司成立于2004年，是国内最早专业从事电子商务服务的高新企业之一，率先提出Business To
+                Management的电子商务营销管理理念和体系，是全球B2M电子商务模式的践行者
+            </p>
+        </div>
+    </div>
+</div>
+
+<div align="center" class="none style1 style2"><strong><br>
+加盟专线：18938058194</strong>（微信同号）</div>
+<span class="style1">
+<!--buttom -->
+</span>
+<!--<div class="buttom style1">
+    <div class="buttom_nav"><a href="../product/faq.html">常见问题</a><a href="../product/images/zhengshu.jpg">软件证书</a><a href="Friendlink.html" ">友情链接</a><script src="https://s11.cnzz.com/stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script></div>
+    <div class="buttom_text"><p>版权所有 © 深圳鹰眼搜科技有限公司　粤ICP备10063542号</p></div>
+</div>-->
+</body>
+</html>

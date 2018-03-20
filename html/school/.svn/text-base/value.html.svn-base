@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>学堂价值</title>
+    <link href="css/head to tail.css" rel="stylesheet" type="text/css">
+    <link href="css/value.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--top -->
+<div class="top">
+   <!-- <div class="top1">
+        <img style=" text-align:center; margin-top:25px;" src="img/logo.png">
+        <div class="top_nav"><a href="../../index.html">搜客户</a>|<a href="../product/index.html">产品介绍 |<a href="../../buy.html">产品价格</a>|<a
+                href="../product/download.html">软件下载</a>|<a href="../about/case.html">成功案例</a>|<a
+                href="../about/index.html">关于我们</a>|<a href="../school/index.html">鹰学堂</a>
+        </div>
+    </div>-->
+
+     <div class="top2">
+        <div class="top2_nav"><span class="nav_lev"><a href="index.html?school-index">学堂简介</a></span>|<span class="nav_lev1"><a
+                href="index.html?school-value">学堂价值</a></span>|<span class="nav_lev1"><a href="index.html?school-learning">学习模式</a></span>|<span
+                class="nav_lev1"><a href="index.html?school-scope">课程范围</a></span>|<span class="nav_lev1"><a
+                href="index.html?school-notice">课程预告</a></span>|<span class="nav_lev1"><a href="index.html?school-vip">VIP专区</a></span></div>
+    </div>
+</div>
+    <!--content -->
+    <div class="content1"><img src="img/images/value_03.png" width="264" height="90"></div>
+    <div class="content2">
+        <div class=" content2_text1">
+            <div class="text"><img src="img/images/value_07.png" width="87" height="54"></div>
+            <div class="content2_text1_1"><p class="p">让外贸业务人员：</p>
+            <p style="margin-top:10px;line-height:32px;">
+                全面获取客户开发知识<br/>
+
+快速提升外贸实战能力<br/>
+
+
+轻松适应不同企业环境
+            </p></div>
+        </div>
+        <div class=" content2_text2">
+            <div class="text"><img src="img/images/value_10.png" height="54"></div>
+            <div class="content2_text1_1"><p class="p2">让外贸公司老板：</p>
+               <p style="margin-top:10px;line-height:32px;"> 
+               解决外贸领域招人难、留人难的问题<br/>
+
+获得更专业、更职业的外贸营销人才<br/>
+
+降低聘任新人的磨合风险和培训成本</p></div>
+        </div>
+        <div class="content2_text1"><img src="img/images/value_15.png" width="464" height="368"></div>
+        <div class="content2_text2"><img src="img/images/value_17.png" width="464" height="368"></div>
+    </div>
+
+    <div class="none"></div>
+    <!--buttom -->
+    <!--<div class="buttom">
+        <div class="buttom_nav"><a href="../product/faq.html">常见问题</a><a href="../product/images/zhengshu.jpg">软件证书</a><a href="../about/Friendlink.html" ">友情链接</a><script src="https://s11.cnzz.com/stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script></div>
+    <div class="buttom_text"><p>版权所有 © 深圳鹰眼搜科技有限公司　粤ICP备10063542号</p></div>
+    </div>-->
+</body>
+</html>

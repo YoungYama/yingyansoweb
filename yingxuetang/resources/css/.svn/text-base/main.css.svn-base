@@ -1,0 +1,259 @@
+#main-content #main-index img {
+	width: 100%;
+}
+
+#main-content #main-hot-course {
+	width: 100%;
+	height: 425px;
+	background-color: #fafafa;
+	margin-top: 50px;
+}
+
+#main-content #main-share-action {
+	width: 100%;
+	height: 260px;
+	background-color: #3453a3;
+}
+
+#main-content #main-open-course {
+	width: 100%;
+	height: 425px;
+	background-color: #fafafa;
+}
+
+#main-content #main-vip-course {
+	width: 100%;
+	/* height: 800px; */
+	padding-bottom: 50px;
+	background-color: #fafafa;
+}
+
+#main-content .main-detail {
+	width: 1050px;
+	margin: auto;
+}
+
+#main-content .main-title-div {
+	margin: 50px 0px 10px 0px;
+	display: inline-block;
+	width: 100%;
+}
+
+#main-content .main-title-div div {
+	display: inline-block;
+}
+
+#main-content .main-title-div div:first-child {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#main-content .main-title-div div:last-child {
+	float: right;
+	font-size: 14px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+#main-content .main-title-div div:last-child a {
+	color: #000;
+	text-decoration: none;
+}
+
+#main-content .main-title-div div:last-child:hover {
+	text-decoration: underline;
+}
+
+#main-content .main-course-div {
+	clear: both;
+	overflow: hidden;
+	width: 1050px;
+}
+
+#main-content .main-course-div a {
+	color: #000000;
+	display: inline-block;
+	float: left;
+	margin-right: 47px;
+}
+
+#main-content .main-course-div .one-course-div {
+	display: inline-block;
+	background-color: #FFFFFF;
+	width: 225px;
+	height: 300px;
+	border: 1px solid #ededed;
+	cursor: pointer;
+}
+
+#main-content .main-course-div .one-course-div:hover {
+	border: 1px solid #BFBFBF;
+	box-shadow: 2px 2px 3px #BFBFBF;
+}
+
+#main-content .main-course-div .last-child-a {
+	margin-right: 0px !important;
+}
+
+#main-content .one-course-div .one-course-img {
+	width: 100%;
+	height: 150px;
+	background-color: #EDEDED;
+	background-image: url("https://www.yingyanso.cn/img/index-img.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#main-content .one-course-div .one-course-detail {
+	width: 100%;
+	height: 150px;
+	display: inline-block;
+}
+
+#main-content .one-course-div .one-course-title {
+	padding: 10px;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	font-size: 15px;
+}
+
+#main-content .one-course-div .one-course-other {
+	padding: 0px 10px;
+	font-size: 13px;
+	color: #999999;
+}
+
+#main-content .one-course-div .one-course-other div {
+	display: inline-block;
+}
+
+#main-content .one-course-div .one-course-other .publisher {
+	width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#main-content .one-course-div .one-course-other .nums {
+	float: right;
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#main-content .one-course-div .one-course-desc {
+	padding: 0px 10px;
+	padding-top: 10px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	color: #999999;
+	font-size: 13px;
+}
+
+#main-content #main-vip-course .main-title-div {
+	margin-top: 30px;
+}
+
+#main-content #main-vip-course a {
+	margin-bottom: 30px;
+}
+
+#main-content #main-share-action .more-left {
+	display: inline-block;
+	float: left;
+}
+
+#main-content #main-share-action .more-right {
+	display: inline-block;
+	float: left;
+	margin-left: 140px;
+}
+
+#main-content #main-share-action .more-left img {
+	height: 100px;
+	margin-top: 90px;
+}
+
+#main-content #main-share-action .more-right .more-aq {
+	display: inline-block;
+	width: 230px;
+	margin-top: 60px;
+	height: 165px;
+	float: left;
+}
+
+#main-content #main-share-action .more-right .aq-list div {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-top: 15px;
+	color: #FFFFFF;
+}
+
+#main-content #main-share-action .more-right .aq-list a {
+	color: #FFFFFF;
+	font-size: 13px;
+}
+
+#main-content #main-share-action .more-right .more-aq-tilte {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#main-content #main-share-action .more-right .more-aq-tilte span {
+	background-color: #14a714;
+	padding: 5px 25px;
+	font-size: 16px;
+}
+
+#main-content #main-share-action .more-right .more-news {
+	display: inline-block;
+	margin-top: 60px;
+	margin-left: 140px;
+	width: 230px;
+	height: 165px;
+	float: left;
+}
+
+#main-content #main-share-action .more-right .news-list div {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-top: 15px;
+	color: #FFFFFF;
+}
+
+#main-content #main-share-action .more-right .news-list a {
+	color: #FFFFFF;
+	font-size: 13px;
+}
+
+#main-content #main-share-action .more-right a{
+	text-decoration: none;
+}
+
+#main-content #main-share-action .more-right a:hover{
+	text-decoration: underline;
+}
+
+
+#main-content #main-share-action .more-right .more-news-tilte {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#main-content #main-share-action .more-right .more-news-tilte span {
+	background-color: #14a714;
+	padding: 5px 25px;
+	font-size: 16px;
+}

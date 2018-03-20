@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="url"></div>
+		<script type="text/javascript" src="../js/yys-cookie-token-1.0.js"></script>
+
+		<script>
+			var url = location.href;
+			
+			document.getElementById("url").innerHTML = url;
+
+			if(url.indexOf("token=") != -1) {
+				alert("set cookie");
+
+				yzzCookieToken.setCookie("test-token", url.split("token=")[1]);
+			}
+		</script>
+	</body>
+
+</html>

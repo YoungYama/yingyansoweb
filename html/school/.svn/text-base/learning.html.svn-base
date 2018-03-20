@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>学习模式</title>
+    <link href="css/learning.css" rel="stylesheet" type="text/css">
+    <link href="css/head to tail.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--top -->
+<div class="top">
+  <!--  <div class="top1">
+        <img style=" text-align:center; margin-top:25px;" src="img/logo.png">
+        <div class="top_nav"><a href="../../index.html">搜客户</a>|<a href="../product/index.html">产品介绍 |<a href="../../buy.html">产品价格</a>|<a
+                href="../product/download.html">软件下载</a>|<a href="../about/case.html">成功案例</a>|<a
+                href="../about/index.html">关于我们</a>|<a href="../school/index.html">鹰学堂</a>
+        </div>
+    </div>-->
+
+     <div class="top2">
+        <div class="top2_nav"><span class="nav_lev"><a href="index.html?school-index">学堂简介</a></span>|<span class="nav_lev1"><a
+                href="index.html?school-value">学堂价值</a></span>|<span class="nav_lev1"><a href="index.html?school-learning">学习模式</a></span>|<span
+                class="nav_lev1"><a href="index.html?school-scope">课程范围</a></span>|<span class="nav_lev1"><a
+                href="index.html?school-notice">课程预告</a></span>|<span class="nav_lev1"><a href="index.html?school-vip">VIP专区</a></span></div>
+    </div>
+</div>
+    <!--content -->
+    <div class="content"><p class="h1">学习模式</p></div>
+    <div class="content1"><p style=" font-size:18px; color:#5ac3ff">鹰学堂采取线上+线下的学习模式，线上培训分普通会员学习群与VIP会员学习群。</p></div>
+    <div class="content2">
+        <div class="text1"><p style="font-size:14px;">普通会员学习群根据课程周期来创建，所有鹰眼搜用户均可参加，每个学习周期为1-2个月，完成当期课程后立即解散。下期新开课程，学习群将重新组建，学员需提前在鹰学堂报名专区申请入群。</p></div>
+        <div class="text2"><p style="font-size:14px;">VIP会员学习群仅限鹰眼搜、易外销系列产品的购买者及相关授权会员进入，VIP会员学习群将长期保留并开展在线培训和交流，会员如果有与外贸相关的问题，都可以在这里得到专业的解答和指导。</p></div>
+        <div class="text3"><p style="font-size:14px;">鹰学堂将为全体会员
+            不定期举办线下培训与交流活动。
+            鹰眼搜与易外销产品的VIP会员
+            将无限次享受鹰学堂每周至少一次的
+            线下培训与交流活动。</p></div>
+    </div>
+
+    <!--buttom -->
+    <!--<div class="buttom">
+        <div class="buttom_nav"><a href="../product/faq.html">常见问题</a><a href="../product/images/zhengshu.jpg">软件证书</a><a href="../about/Friendlink.html" ">友情链接</a><script src="https://s11.cnzz.com/stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script></div>
+    <div class="buttom_text"><p>版权所有 © 深圳鹰眼搜科技有限公司　粤ICP备10063542号</p></div>
+    </div>-->
+</body>
+</html>

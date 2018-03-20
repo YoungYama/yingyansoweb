@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="bshare-custom">
+			<a title="分享到QQ空间" class="bshare-qzone"></a>
+			<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+			<a title="分享到人人网" class="bshare-renren"></a>
+			<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+			<a title="分享到网易微博" class="bshare-neteasemb"></a>
+			<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
+
+		<script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+		<script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/bshareC0.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			var shareUrl = 'http://reg.yingyanso.net:80/product/mobile/regIndex/5?recommender=LPTYGXH';
+
+			//不能带端口号
+			shareUrl = shareUrl.replace(":80", "");
+
+			var shareData = {
+				title: '好多精准买家，快来搜！', // 分享标题
+				summary: '好东西要分享，我已用鹰眼搜找到全球100个精准客户，海量客户等着我们去开发，加油！',
+				url: shareUrl, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+				pic: 'http://reg.yingyanso.net:80/resources/images/logo.png' // 分享图标
+			};
+
+			bShare.addEntry(shareData);
+		</script>
+
+	</body>
+
+</html>

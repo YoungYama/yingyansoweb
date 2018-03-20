@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.conter{ width:1056px; height:264px; margin:auto; margin-top:200px;}
+.con1_img{ float:left;}
+.con1_t{ width:612px; float:left; margin:20px 20px;}
+.p1{ font-size:20px; color:#fff; text-indent:40px; line-height:30px;}
+.con1_i{ text-align:center; margin-top:80px;}
+
+.con2{ width:740px; height:140px; margin:auto; margin-top:120px;}
+.con2_i{ float:left;}
+.con2_t{ float:left; width:240px; float:left; margin:20px 40px;}
+.con2_t p{ font-size:18px; color:#000; line-height:26px;}
+.con2_i2{ text-align:center; margin-top:40px;}
+
+.con3{ text-align:center; margin-top:80px;}
+.con3_t{ width:580px; margin:auto;}
+.con3_t p{ font-size:18px; color:#000; line-height:30px;}
+.con3_i2{ text-align:center;}
+
+.con4{ width:1056px; margin:auto; margin-top:100px;}
+.con4_le{ width:368px; float:left;}
+.con4_i{ margin-top:120px;}
+.con4_t{ width:324px; float:right; margin-right:10p}
+.p2{ font-size:18px; color:#000; line-height:30px;}
+.con4_ri{ width:418px; float:left; margin-left:124px;}
+
+.con5_le{ width:418px; float:left; margin-left:124px;}
+.con5_ri{ width:368px; float:left;}
+.con5_t{ width:324px; float:left; margin-left:20px;}
+
+.con6_t{ width:386px; margin:auto;}
+.con6_t p{ font-size:20px; color:#333;}

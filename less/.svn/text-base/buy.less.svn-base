@@ -1,0 +1,448 @@
+ul,p,input{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+a{
+  text-decoration: none;
+}
+h3{
+  margin:0;
+  padding:0;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding:0;
+  font-family:"Microsoft YaHei", arial, sans-serif;
+}
+.main{
+  position:relative;
+  min-width:800px;
+  .buy-header{
+    color:#2C2C2C;
+    text-align: center;
+    background-color:#3453a3;
+    padding:20px 0 30px;
+    .logo{
+      color:#fff;
+      font-size:40px;
+    }
+    ul{
+      width:446px;
+      margin-top:20px;
+      background-color:#fff;
+      display: inline-block;
+      li{
+        font-size:12px;
+        display: inline-block;
+        padding:10px 20px;
+        width:30%;
+        color:#555;
+      }
+    }
+  }
+  .buy-content{
+    text-align:center;
+    width:740px;
+    margin:0 auto;
+    padding:20px 0;
+    .vipNum{
+      text-align:center;
+      .vipNum-title{
+        font-size:20px;
+        color:#3453a3;
+      }
+      .vipNum-box{
+        color:#3453a3;
+        font-size: 24px;
+        line-height: 39px;
+        margin-top:15px;
+        .user-num{
+          padding:5px 10px;
+          background-color:#e2e6f1;
+          border-radius:6px;
+          position:relative;
+          &:after{
+            content: "";
+            width: 28px;
+            display: inline-block;
+            border: 1px solid #e2e6f1;
+            position: absolute;
+            top: 50%;
+            left: 0;
+          }
+        }
+      }
+    }
+    .vipPrice{
+      margin-top:45px;
+      ul{
+        position:relative;
+        margin-right:-28px;
+        .infoBox{
+          position:relative;
+          padding:10px 20px;
+          border:1px solid #9cb7ff;
+          width:30%;
+          float:left;
+          margin-right:25px;
+          text-align: center;
+          cursor:pointer;
+          &:hover{
+            .selected;
+            >.priceCheck{
+              color:#fe5d03;
+            }
+          }
+          >span{
+            h3{
+              color:#5d8aff;
+              font-size:20px;
+              font-weight:normal;
+            }
+            p{
+              color:#bac5fb;
+              font-size:12px;
+            }
+          }
+          .vipInfo{
+            font-size:12px;
+            width:100%;
+            li{
+              margin-top:5px;
+              padding:5px 0;
+              line-height:20px;
+              overflow: hidden;
+              .vip-info-title{
+                float:left;
+              }
+              .vip-info-ans{
+                float:right;
+              }
+            }
+          }
+          .myPrice{
+            color:#fe5d03;
+            font-size:18px;
+            font-weight:600;
+            margin:15px 0;
+            display: inline-block;
+            .unit{
+              font-size:14px;
+            }
+          }
+          .priceCheck{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 30px;
+            color:#999;
+          }
+        }
+        .info1-disabled{
+          display: none;
+          cursor:not-allowed;
+          position:absolute;
+          left:0;
+          top:0;
+          background:#ccc;
+          opacity:0.5;
+          width:231px;
+          height:363px;
+        }
+        .info2-disabled{
+          .info1-disabled;
+          cursor:not-allowed;
+          left: 255px;
+        }
+      }
+      .selected{
+        box-shadow: 0px 0px 10px 6px #709ff4 inset;
+        .priceCheck{
+          color:#fe5d03!important;
+        }
+      }
+    }
+    .buyButton{
+      margin:50px 0;
+      display: inline-block;
+      border: 1px solid #fe5d03;
+      width:230px;
+      padding:5px 0;
+      text-align: center;
+      border-radius: 40px;
+      color:#fff;
+      font-size:22px;
+      cursor:pointer;
+      //background: -webkit-linear-gradient(left, #ff8100 , #ff6100); /* Safari 5.1 - 6.0 */
+      //background: -o-linear-gradient(right, #ff8100, #ff6100); /* Opera 11.1 - 12.0 */
+      //background: -moz-linear-gradient(right, #ff8100, #ff6100); /* Firefox 3.6 - 15 */
+      //background: linear-gradient(to right, #ff8100 , #ff6100); /* 标准的语法 */
+      background-color:#ff6100;
+      &:hover{
+        background:#e45607;
+      }
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right:10px;
+      }
+      .arrow-right{
+        display: inline-block;
+        width:40px;
+        height:40px;
+        vertical-align: middle;
+        background-size:contain;
+        background-image:url("../img/arrow-right.png");
+        background-repeat: no-repeat;
+      }
+    }
+    .client-buyState{
+      height:170px;
+      overflow: hidden;
+      border:1px solid #9cb7ff;
+      .info-box{
+        height: 114px;
+        overflow: hidden;
+        margin: 30px 20px;
+      }
+      ul{
+        li{
+          font-size:12px;
+          display: inline-block;
+          padding:10px 0;
+          width:32%;
+        }
+      }
+    }
+    .vipService{
+      margin-top:50px;
+      font-size:12px;
+      overflow: hidden;
+      .service-power{
+        display: inline-block;
+        float:left;
+      }
+      .yys-tel{
+        margin-top:25px;
+        display: block;
+        clear: both;
+        text-align: left;
+      }
+      ul{
+        float: left;
+        li{
+          display: inline-block;
+          margin-left:30px;
+          .yys-brand{
+            font-size: 24px;
+            line-height: 12px;
+            vertical-align: middle;
+            color: #3453a3;
+          }
+        }
+      }
+    }
+  }
+  .go{
+    display: inline-block;
+    width: 236px;
+    height: 171px;
+    position: absolute;
+    right: 0;
+    //bottom: 62px;
+    top:245px;
+    background-image: url(../img/go.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .yys-footer{
+    clear:both;
+    font-size:12px;
+    margin-top:20px;
+    padding:10px 0;
+    text-align: center;
+    width: 100%;
+    min-width:1000px;
+    color:#fff;
+    background-color:#3453A3;
+    ul{
+      margin-bottom:10px;
+      li{
+        display: inline-block;
+        margin-left:70px;
+        &:first-child{
+          margin-left:0;
+        }
+      }
+    }
+    a{
+      color:#fff;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.payLayer{
+  display: none;
+  position:fixed;
+  z-index:997;
+  .dialog-mask{
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:rgba(51, 51, 51,0.6);
+  }
+  .pay-content{
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin-left:-200px;
+    margin-top:-150px;
+    background-color:#fff;
+    width:400px;
+    padding:30px 20px;
+    border-radius:4px;
+    text-align: center;
+    .close{
+      position:absolute;
+      right:10px;
+      top:10px;
+      color:#666;
+      cursor:pointer;
+      &:hover{
+        color:#333;
+      }
+    }
+    .loading{
+      display: none;
+      .dialog-mask2{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #ccc;
+        opacity: 0.6;
+      }
+      i{
+        position:absolute;
+        left:50%;
+        top:50%;
+        color:#666;
+        font-size: 80px;
+        margin-top:-40px;
+        margin-left:-40px;
+        animation: loading 2s infinite linear;
+      }
+      @keyframes loading
+      {
+        from {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);}
+        to {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    }
+    .pay-title{
+      font-size:16px;
+      font-weight:normal;
+    }
+    .money-num{
+      display: inline-block;
+      width: 100%;
+      padding: 20px;
+      font-size: 30px;
+      color: red;
+      .rmb{
+        font-size:22px;
+      }
+    }
+    .pay-methods{
+      .pSelected{
+        border: 2px solid;
+        padding: 4px 4px 0 4px;
+        border-radius: 15px;
+      }
+      .weChat{
+        display: inline-block;
+        width: 50%;
+        float: left;
+        .icon-weixin{
+          font-size: 66px;
+          color: #11ac36;
+          cursor: pointer;
+          border-color:#11ac36;
+          &:hover{
+            .pSelected;
+          }
+        }
+        .icon-xuanze{
+          display: none;
+          position: absolute;
+          bottom: 148px;
+          right: 262px;
+          color: #f4ea2a;
+        }
+        span{
+          width: 100%;
+          display: inline-block;
+        }
+      }
+      .aliPay{
+        display: inline-block;
+        width: 50%;
+        .icon-zhifubao{
+          font-size: 66px;
+          color: #1296db;
+          cursor: pointer;
+          &:hover{
+            .pSelected;
+          }
+        }
+        .icon-xuanze{
+          display: none;
+          position: absolute;
+          right: 82px;
+          bottom: 148px;
+          color: #f4ea2a;
+        }
+        span{
+          width: 100%;
+          display: inline-block;
+        }
+      }
+    }
+    #payBtn{
+      border: 1px solid #4ea8d3;
+      cursor:pointer;
+      background: #4ea8d3;
+      color: #fff;
+      margin-top: 40px;
+      display: inline-block;
+      width: 256px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 40px;
+      &:hover{
+        background-color:#216faf;
+      }
+    }
+  }
+}

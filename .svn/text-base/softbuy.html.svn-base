@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!--浏览器不缓存HTML-->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+
+		<title>购买鹰眼搜</title>
+		<link rel="alternate icon" type="image/png" href="img/es.ico">
+		<link rel="stylesheet" href="css/scrollbar.css?version=18" />
+		<link rel="stylesheet" href="css/iconfont.css?version=18" />
+		<link rel="stylesheet" href="css/common.css?version=18" />
+		<link rel="stylesheet" href="css/softbuy.css?version=18" />
+		<link rel="stylesheet" href="css/tipAlert.css?version=18">
+		<link rel="stylesheet" href="css/imageAlert.css?version=18">
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="buy-header">
+				<div class="logo">
+					鹰眼搜软件版，高效搜索全球客户
+				</div>
+				<ul>
+					<li>开发180个国家客户</li>|
+					<li>精准定位联系方式</li>
+				</ul>
+				<div class="product-list">
+					<div class="sign-btn">
+						<a href="javascript:void(0);" id="log-in"><i class="icon iconfont icon-denglu1"></i> 登录
+						</a>
+						<a href="javascript:void(0);" id="sign-in"><i class="icon iconfont icon-zhuce1"></i> 免费注册
+						</a>
+					</div>
+					<div class="user-info">
+						<img src="img/bd_logo1.png" alt="用户头像" id="userImg" />
+						<div class="user-more">
+							<span class="user-name" id="userName"></span>
+							<!--<span class="welc-user">欢迎登录鹰眼搜</span>-->
+						</div>
+						<span id="isVIP" title="VIP用户">
+                    	<i class="icon iconfont icon-vip"></i>
+                    </span>
+						<span id="jifen" title="鹰豆">
+                    	<i class="icon iconfont icon-douban-copy"></i>
+                    	<span id="jifen-num">0</span>
+						</span>
+						<span id="beVIP">未授权</span>
+						
+						<!--<span id="info-span"><i class="icon iconfont icon-tongzhi"></i><span
+							id="info-count">0</span> </span>-->
+						
+						<span class="quit-box">
+                        <a href="javascript:void(0);" class="quit"><span>退出</span></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="buy-content">
+				<!--<div class="vipNum">
+					<span class="vipNum-title">截至此刻，VIP会员已达到</span>
+					<div class="vipNum-box">
+						<div class="flip">
+							<div class="price-div">
+								<div class="h-k number hide"></div>
+								<div class="t-k number"></div>
+								<div class="k number"></div>
+								<div class="comma sign">,</div>
+								<div class="h number"></div>
+								<div class="t number"></div>
+								<div class="single number"></div>
+								<div class="sign dot hide">.</div>
+								<div class="t-d number hide"></div>
+								<div class="h-d number hide"></div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<div id="more-products-pro"><a target="_blank" title="点击了解更多产品详情" href="html/index.html?product-introduce">更多产品详情</a></div>
+				
+				<div class="vipPrice">
+					<ul>
+						<li class="infoBox info1 product-vip-01">
+							<div class="vip-header">
+								<h3>所有套餐</h3>
+								<h4><span id="year-coin">年</span>费</h4>
+							</div>
+							<ul class="vipInfo">
+								<li>
+									<span class="vip-info-title">服务内容</span>
+								</li>
+								<li>
+									<span class="vip-info-title">搜索区域</span>
+								</li>
+								<li>
+									<span class="vip-info-title">搜索次数</span>
+								</li>
+								<li>
+									<span class="vip-info-title">提取客户</span>
+								</li>
+								<li>
+									<span class="vip-info-title">邮箱验证</span>
+								</li>
+								<li>
+									<span class="vip-info-title">社交信息</span>
+								</li>
+								<li>
+									<span class="vip-info-title">导出客户</span>
+								</li>
+								<li>
+									<span class="vip-info-title">整理重复</span>
+								</li>
+								<li>
+									<span class="vip-info-title">过滤地址</span>
+								</li>
+								<li>
+									<span class="vip-info-title">关键词拓展</span>
+								</li>
+								<li>
+									<span class="vip-info-title">客户库管理</span>
+								</li>
+								<li>
+									<span class="vip-info-title">外贸工具</span>
+								</li>
+								<li>
+									<span class="vip-info-title">鹰学堂课程</span>
+								</li>
+							</ul>
+						</li>
+						<li class="infoBox info2 product-vip-7">
+							<div class="vip-header">
+								<img src="img/vip_icon_kkfp.png" id="kkfp" />
+								<h3>软件版</h3>
+								<span class="myPrice"><span class="unit">￥</span><span class="productPrice">2580</span></span>
+
+								<div id="add-user-div">
+									<span class="add-user-num change-user-num"><i class="icon iconfont icon-jian"></i></span><span id="user-num">标准</span>套餐<span class="cut-user-num change-user-num"><i class="icon iconfont icon-jia"></i></span>
+								</div>
+								
+								<div id="add-user-tip">
+									<span>（增加账号：￥<span id="pre-price">600</span>/个）</span>
+								</div>
+
+								<div id="to-buy">
+									立即开通
+								</div>
+							</div>
+							<ul class="vipInfo">
+								<li>
+									<span class="vip-info-ans">专属客服+视频学习</span>
+								</li>
+								<li>
+									<span class="vip-info-ans">全球不限（180多个）</span>
+								</li>
+								<li>
+									<span class="vip-info-ans">不限</span>
+								</li>
+								<li>
+									<span class="vip-info-ans">不限</span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-kh_1 yes"></i></span>
+								</li>
+								<li><span class="vip-info-ans">VIP专属课程</span></li>
+							</ul>
+						</li>
+						<li class="infoBox info3 product-vip-0">
+							<div class="vip-header">
+								<h3>免费试用</h3>
+								<span class="myPrice"><span class="unit">￥</span><span class="productPrice">0</span></span>
+
+								<div class="free-buy">
+									免费试用
+								</div>
+							</div>
+							<ul class="vipInfo">
+								<li>
+									<span class="vip-info-ans">论坛学习</span>
+								</li>
+								<li>
+									<span class="vip-info-ans">通用区域（1个）</span>
+								</li>
+								<li>
+									<span class="vip-info-ans">3次</span>
+								</li>
+								<li>
+									<span class="vip-info-ans">3次</span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+								<li>
+									<span class="vip-info-ans"><i class="icon iconfont icon-cuo no"></i></span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<!--<div class="buyButton">
+					<span>立即购买</span>
+					<i class="arrow-right"></i>
+				</div>-->
+
+				<div id="coin-help">付款后均赠送与付款金额等额的鹰豆，
+					<a href="http://bbs.yingyanso.net/thread-1435-1-1.html" target="_blank" title="点此查看“鹰豆使用规则”">“鹰豆使用规则”</a>
+				</div>
+
+				<div class="client-buyState" id="FontScroll">
+					<div class="info-box">
+						<ul>
+							<li>恭喜138****8751成功购买898元套餐</li>
+							<li>恭喜131****5625成功购买198元套餐</li>
+							<li>恭喜185****8450成功购买198元套餐</li>
+							<li>恭喜189****6338成功购买898元套餐</li>
+							<li>恭喜151****9623成功购买2580元套餐</li>
+							<li>恭喜138****1144成功购买898元套餐</li>
+							<li>恭喜130****0866成功购买898元套餐</li>
+							<li>恭喜159****2335成功购买898元套餐</li>
+							<li>恭喜134****5655成功购买198元套餐</li>
+							<li>恭喜180****9442成功购买2580元套餐</li>
+							<li>恭喜186****1666成功购买198元套餐</li>
+							<li>恭喜188****0098成功购买898元套餐</li>
+							<li>恭喜135****5881成功购买198元套餐</li>
+							<li>恭喜137****0009成功购买898元套餐</li>
+							<li>恭喜150****5522成功购买198元套餐</li>
+							
+							<li>恭喜188****8458成功购买898元套餐</li>
+							<li>恭喜141****5624成功购买198元套餐</li>
+							<li>恭喜155****8470成功购买898元套餐</li>
+							<li>恭喜179****6238成功购买2580元套餐</li>
+							<li>恭喜131****9443成功购买2580元套餐</li>
+							<li>恭喜144****1774成功购买898元套餐</li>
+							<li>恭喜187****9066成功购买898元套餐</li>
+							<li>恭喜133****2665成功购买898元套餐</li>
+							<li>恭喜156****5888成功购买198元套餐</li>
+							<li>恭喜177****9499成功购买2580元套餐</li>
+							<li>恭喜136****1681成功购买198元套餐</li>
+							<li>恭喜156****0070成功购买898元套餐</li>
+							<li>恭喜141****5855成功购买198元套餐</li>
+							<li>恭喜170****0074成功购买198元套餐</li>
+							<li>恭喜131****1132成功购买198元套餐</li>
+							
+							<li>恭喜178****8674成功购买898元套餐</li>
+							<li>恭喜142****5698成功购买198元套餐</li>
+							<li>恭喜135****8890成功购买198元套餐</li>
+							<li>恭喜181****0098成功购买898元套餐</li>
+							<li>恭喜130****9600成功购买2580元套餐</li>
+							<li>恭喜179****1354成功购买198元套餐</li>
+							<li>恭喜132****0866成功购买898元套餐</li>
+							<li>恭喜157****2305成功购买2580元套餐</li>
+							<li>恭喜134****5159成功购买198元套餐</li>
+							<li>恭喜140****9402成功购买2580元套餐</li>
+							<li>恭喜176****1606成功购买198元套餐</li>
+							<li>恭喜188****0018成功购买198元套餐</li>
+							<li>恭喜135****5801成功购买198元套餐</li>
+							<li>恭喜137****0029成功购买198元套餐</li>
+							<li>恭喜150****5802成功购买898元套餐</li>
+						</ul>
+					</div>
+				</div>
+				<div class="vipService">
+					<span class="service-power">会员特权：</span>
+					<ul>
+						<li><i class="yys-brand icon iconfont icon-randeng_shipin_suoxutubiao-"></i><span>全球客户数据</span></li>
+						<li><i class="yys-brand icon iconfont icon-randeng_shipin_suoxutubiao-"></i><span>社交平台信息</span></li>
+						<li><i class="yys-brand icon iconfont icon-randeng_shipin_suoxutubiao-"></i><span>在线学习课堂</span></li>
+					</ul>
+					<span class="yys-tel">服务热线 : <span style="margin-left: 30px;">0755-88843705</span></span>
+				</div>
+			</div>
+			<!--<a href="html/index.html?product-introduce" class="go" target="_blank" title="点此了解鹰眼搜背后的秘密"></a>-->
+			<!--<div class="yys-footer">
+				<ul>
+					<li>
+						<a href="http://bbs.yingyanso.net/forum-50-1.html" target="_blank" title="常见问题">常见问题</a>
+					</li>
+					<li>
+						<a href="html/product/images/zhengshu.jpg" target="_blank" title="软件证书">软件证书</a>
+					</li>
+					<li>
+						<script src="https://s11.cnzz.com/z_stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+					</li>
+				</ul>
+				<span>版权所有 © <a href="http://www.yingyanso.cn" target="_blank">深圳鹰眼搜科技有限公司</a>　<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备10063542号</a></span>
+			</div>-->
+
+			<div class="yys-footer-2">
+				<div class="foot-wz">
+					<a href="html/index.html?product-faq">常见问题</a>
+					<a href="html/images/zhengshu.jpg" target="_blank">软件证书</a>
+					<a href="html/index.html?about-friendlink">友情链接</a>
+					<script src="https://s11.cnzz.com/z_stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+					<br> <span class="f2 ">版权所有 &copy; 深圳鹰眼搜科技有限公司　<a href="http://www.miibeian.gov.cn/ " target="_blank ">粤ICP备10063542号</a></span>
+				</div>
+
+				<div id="qrcode"></div>
+
+				<div id="qrcode-text">
+					欢迎关注鹰眼搜服务号<br /> 探索最先进的找客户方法
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/json2.js?version=18"></script>
+	<script type="text/javascript" src="js/browser-ompatibility.js?version=18"></script>
+	<script type="text/javascript" src="js/jquery.min-1.10.2.js?version=18"></script>
+	<script type="text/javascript" src="js/config.js?version=18"></script>
+	<script type="text/javascript" src="js/number-roll.js?version=18"></script>
+	<script type="text/javascript" src="js/tipAlert.js?version=18"></script>
+	<script type="text/javascript" src="js/imageAlert.js?version=18"></script>
+	<script type="text/javascript" src="js/yys-cookie-token-1.0.js?version=18"></script>
+	<script type="text/javascript" src="js/utf.js?version=18"></script>
+	<script type="text/javascript" src="js/jquery.qrcode.js?version=18"></script>
+	<script type="text/javascript" src="js/common.js?version=18"></script>
+	<script type="text/javascript" src="js/sure-pay.js?version=18"></script>
+	<script type="text/javascript" src="js/div-drag.js?version=18"></script>
+	<script type="text/javascript" src="js/softbuy.js?version=18"></script>
+	
+</html>

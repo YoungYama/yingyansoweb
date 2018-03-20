@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<div style="width: 400px;height: 400px;" id="qrcode"></div>
+		
+		<img src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFZ8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeUgySnNLZVVjWDAxdkFFMTFxY2YAAgRkl0BaAwSAUQEA" />
+
+		<script type="text/javascript" src="../js/jquery.min-1.10.2.js"></script>
+		<script type="text/javascript" src="../js/qrcode.min.js"></script>
+
+		<script>
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+				width: 330,
+				height: 330
+			});
+			qrcode.makeCode("http://weixin.qq.com/q/02yH2JsKeUcX01vAE11qcf");
+		</script>
+	</body>
+
+</html>

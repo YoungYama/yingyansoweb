@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript" src="yingxuetang/resources/js/base64.min.js"></script>
+<script type="text/javascript" src="yingxuetang/resources/js/common-function.js"></script>
+<script>
+	var url = location.href;
+
+	if(url.indexOf("action=logout") != -1) {
+		deleteCookie("token");
+		deleteCookie("user");
+	} else {
+	
+		if(url.indexOf("token=") != -1 && url.indexOf("&user=") != -1) {
+			var urls = url.split("token=");
+
+			url = urls[1];
+
+			if(url.indexOf("&user=") != -1) {
+				urls = url.split("&user=");
+
+				var token = urls[0];
+				var user = urls[1];
+				user = Base64.decode(user);
+				
+				setCookie("token", token);
+				setCookie("user", user);
+
+			}
+
+		}
+	}
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="../js/country.js"></script>
+		<script>
+//			var allCountry = countryJson.dyz.concat(countryJson.fz).concat(countryJson.mz).concat(countryJson.oz).concat(countryJson.yz);
+			var allCountry = countryJson["fz"];
+			var result = "";
+			
+			var count = 0;
+
+			for(var i = 0, max = allCountry.length; i < max; i++) {
+				var optionName = allCountry[i].typename;
+				var optionId = allCountry[i].id;
+				var optionCode = allCountry[i].code;
+
+				result += optionId + "#" + optionCode + "#" + optionName + ","
+				count++;
+			}
+
+			result = result.substring(0, result.length - 1);
+
+
+			console.log(result);
+			console.log(count);
+		</script>
+	</body>
+
+</html>

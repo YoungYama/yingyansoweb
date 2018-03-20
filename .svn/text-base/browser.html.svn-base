@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>抱歉，鹰眼搜目前不支持您的浏览器</title>
+		<link rel="alternate icon" type="image/png" href="img/es.ico">
+		<style type="text/css">
+			.ieWarn {
+				width: 1100px;
+				margin-top: 50px;
+				margin-left: 18%;
+			}
+			
+			.ieWarn .c2r-1 h3 {
+				font-size: 25px;
+				font-weight: normal;
+				color: #333;
+				width: 100%;
+				display: inline-block;
+				margin: 0 auto;
+			}
+			
+			.ieWarn .c2r-2 {
+				margin-top: 50px;
+			}
+			
+			.ieWarn .c2r-2 p {
+				color: #666;
+				font-size: 16px;
+				margin: 0;
+			}
+			
+			.ieWarn .c2r-img {
+				margin-top: 20px;
+			}
+			
+			.ieWarn .c2r-3-warn {
+				display: inline-block;
+				margin-top: 50px;
+				font-size: 12px;
+				color: #666;
+			}
+			
+			.ieWarn .c2r-3 {
+				color: #333;
+				font-size: 12px;
+				margin-top: 50px;
+			}
+			
+			.ieWarn .c2r-3 span {
+				display: inline-block;
+				font-size: 12px;
+				width: 100%;
+				margin: 10px 0;
+			}
+			
+			.ieWarn .c2r-3 span a {
+				margin-left: 10px;
+				color: #fff;
+				padding: 3px 15px;
+				background-color: #3e90e2;
+				border-radius: 4px;
+			}
+			
+			.ieWarn .c2r-3 span a:hover {
+				background-color: #3453a3;
+			}
+			
+			.ieWarn .c2r-4-btn {
+				cursor: pointer;
+				padding: 6px 12px;
+				background-color: #d9534f;
+				color: #fff;
+				font-size: 14px;
+				border-radius: 4px;
+				margin-top: 50px;
+				display: inline-block;
+			}
+			
+			.ieWarn .c2r-4-btn:hover {
+				background-color: #e83e39;
+			}
+			
+			.yys-360qiehuan {
+				display: none;
+				z-index: 11000;
+				position: fixed;
+			}
+			
+			.yys-360qiehuan .qiehuan-mask {
+				cursor: pointer;
+				z-index: 1099;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #000000;
+				/* older safari/Chrome browsers */
+				-webkit-opacity: 0.5;
+				/* Netscape and Older than Firefox 0.9 */
+				-moz-opacity: 0.5;
+				/* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+				-khtml-opacity: 0.5;
+				/* IE9 + etc...modern browsers */
+				opacity: .5;
+				/* IE 4-9 */
+				filter: alpha(opacity=50);
+				/*This works in IE 8 & 9 too*/
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+				/*IE4-IE9*/
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+			}
+			
+			.yys-360qiehuan .yys-360qiehuan-box {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				z-index: 10999;
+				border: 0;
+				box-shadow: none;
+				background-color: #FFFFFF;
+				width: 650px;
+				height: 417px;
+				margin-left: -325px;
+				margin-top: -209px;
+			}
+			
+			#browsers {
+				margin: 20px 0px 20px 0px;
+			}
+			
+			#browsers td {
+				text-align: center;
+				padding: 5px 15px;
+			}
+			
+			#browsers a {
+				color: #FFFFFF !important;
+			}
+			
+			#browsers img {
+				cursor: pointer;
+				width: 60px;
+				height: 60px;
+				border: 0px;
+			}
+			
+			#qq-browser {
+				width: 75px !important;
+				height: 75px !important;
+			}
+			
+			#qq-browser-td {
+				padding: 5px 0px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--ie换浏览器提示-->
+		<div class="ieWarn">
+			<div class="c2r-1">
+				<h3>抱歉，鹰眼搜目前不支持您的浏览器，如果您使用的是360浏览器，请切换为极速模式（<a href="javascript: void(0);" id="qiehua360" title="点此查看切换方法">方法</a>） 。</h3>
+			</div>
+			<div class="c2r-2">
+				<p>鹰眼搜支持的浏览器有：</p>
+				<table id="browsers">
+					<tr>
+						<td>Firefox</td>
+						<td>Chrome</td>
+						<td>搜狗</td>
+						<td>QQ</td>
+						<td>360极速</td>
+						<td>IE10.0以上</td>
+					</tr>
+					<tr title="点此下载">
+						<td>
+							<a href="http://www.firefox.com.cn/" target="_blank"><img src="img/firefox.png"></a>
+						</td>
+						<td>
+							<a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank"><img src="img/chrome.png"></a>
+						</td>
+						<td>
+							<a href="http://ie.sogou.com/" target="_blank"><img src="img/sougou.png"></a>
+						</td>
+						<td id="qq-browser-td">
+							<a href="http://browser.qq.com/" target="_blank"><img src="img/qq.png" id="qq-browser"></a>
+						</td>
+						<td>
+							<a href="http://chrome.360.cn/" target="_blank"><img src="img/amy-browser-360.png"></a>
+						</td>
+						<td>
+							<a href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads" target="_blank"><img src="img/IE.png"></a>
+						</td>
+					</tr>
+				</table>
+
+				<p style="font-size: 14px;">鹰眼搜强烈建议您用
+					<a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank"> 谷歌浏览器 </a>获得最佳体验</p>
+				<!--<p>Firefox Chrome 搜狗 QQ 360极速 IE10.0以上</p>
+				<div class="c2r-img">
+					<img src="img/lq.png" alt="" />
+				</div>-->
+			</div>
+			<!--<span class="c2r-3-warn">最佳浏览器体验 ：(点击下方下载)</span>
+			<div class="c2r-3">
+				<span>火狐浏览器： <a href="http://www.firefox.com.cn/" target="_blank">下载此浏览器</a></span>
+				<span>谷歌浏览器： <a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank">下载此浏览器</a></span>
+			</div>-->
+			<!--<span class="c2r-4-btn">
+            忽略并继续使用
+        </span>-->
+		</div>
+
+		<!--360切换到极速模式方法-->
+		<div class="yys-360qiehuan">
+			<div class="qiehuan-mask"></div>
+			<img src="img/360qiehuan.png" class="yys-360qiehuan-box" />
+		</div>
+		<script type="text/javascript" src="js/json2.js"></script>
+		<script type="text/javascript" src="js/browser-ompatibility.js"></script>
+		<script type="text/javascript" src="js/jquery.min-1.10.2.js"></script>
+		<script>
+			$("#qiehua360").click(function() {
+				$('.yys-360qiehuan').show();
+			});
+			$(".yys-360qiehuan .qiehuan-mask").click(function() {
+				$('.yys-360qiehuan').hide();
+			});
+		</script>
+	</body>
+
+</html>

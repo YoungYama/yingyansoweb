@@ -1,0 +1,559 @@
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", arial, sans-serif;
+}
+
+.yys-main {
+	min-width: 1200px;
+	min-height: 550px;
+}
+
+.yys-main .yys-header {
+	width: 100%;
+	padding: 0px 20px;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+	font-size: 12px;
+	background-color: #003bb3;
+}
+
+.yys-main .yys-header .link-tel {
+	float: left;
+	color: #fff;
+}
+
+.yys-main .yys-header .product-list {
+	float: right;
+	color: #fff;
+}
+
+.yys-main .yys-header .product-list li {
+	padding: 0 10px;
+	display: inline-block;
+}
+
+.yys-main .yys-header .product-list li a {
+	color: #fff;
+}
+
+.yys-main .yys-header .product-list li a:hover {
+	text-decoration: underline;
+}
+
+.yys-main .yys-header .product-list .sign-btn {
+	margin-left: 30px;
+}
+
+.yys-main .yys-header .product-list .sign-btn a {
+	margin-left: 20px;
+}
+
+.yys-main .yys-header .product-list .sign-btn a i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -3px;
+	margin-right: 3px;
+	font-size: 18px;
+}
+
+.yys-main .yys-header .product-list .user-info {
+	display: none;
+	margin-left: 30px;
+}
+
+.yys-main .yys-header .product-list .user-info img {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+.yys-main .yys-header .product-list .user-info .user-more {
+	vertical-align: middle;
+	line-height: 16px;
+	display: inline-block;
+}
+
+.yys-main .yys-header .product-list .user-info .user-more .user-name {
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.yys-main .yys-header .product-list .quit-box {
+	padding: 0 10px;
+}
+
+.yys-main .yys-header .product-list .quit-box i {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.yys-main .yys-header .product-list .quit-box span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.yys-main .yys-header .product-list .quit-box span:hover {
+	text-decoration: underline;
+}
+
+.yys-main .yys-content {
+	/*width: 880px;*/
+	height: 470px;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	/*background-image: url(https://www.imiker.com/dist/images/20170810/bg.jpg);*/
+	/*background-color: #f6faff;*/
+}
+
+.yys-main .yys-powers,
+.yys-main .yys-web-div2,
+.yys-main .yys-to-buy {
+	background-color: #f6faff;
+}
+
+.yys-main .yys-content .yys-logo {
+	display: inline-block;
+	margin: 65px auto 45px;
+	height: 108px;
+	/*margin-right: 150px;*/
+}
+
+.yys-main .yys-content .yys-logo .logo-img {
+	border: none;
+}
+
+.yys-main .yys-content .yys-search-bar {
+	position: relative;
+}
+
+.yys-main .yys-content .yys-search-bar .yys-loading {
+	display: none;
+	z-index: 1999;
+	position: relative;
+}
+
+.yys-main .yys-content .yys-search-bar .yys-loading .dialog-mask {
+	z-index: 1998;
+}
+
+.yys-main .yys-content .yys-search-bar .yys-loading .loading-box {
+	position: absolute;
+	top: 130px;
+	z-index: 1999;
+	border: 0;
+	box-shadow: none;
+}
+
+.yys-main .yys-content .yys-search-bar .search-tip-div{
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.yys-main .yys-content .yys-search-bar .search-tip {
+	margin: 0 auto 10px;
+	overflow: hidden;
+	padding-left: 60px;
+}
+
+.yys-main .yys-content .yys-search-bar .search-tip li {
+	font-size: 14px;
+	float: left;
+	margin-right: 40px;
+	cursor: pointer;
+	padding: 8px 20px;
+	border-radius: 3px;
+}
+
+.yys-main .yys-content .yys-search-bar .search-tip li:hover {
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #2d69e3;
+	box-shadow: 0px 0px 8px 0px #8c8c8c;
+}
+
+.yys-main .yys-content .yys-search-bar .search-tip .active {
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #2d69e3;
+	box-shadow: 0px 0px 8px 0px #8c8c8c;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input {
+	position: relative;
+	width: 643.5px;
+	height: 50px;
+	z-index: 2;
+	margin: 0 auto;
+	box-shadow: 0px 0px 3px 0px #8c8c8c;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input input {
+	font-size: 14px !important;
+	width: 80%;
+	background: none;
+	height: 50px;
+	float: left;
+	border: 2px solid #8c8c8c;
+	border-right: 0;
+	padding: 4px 10px 4px 12px;
+	outline: none;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input input::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #8c8c8c;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #8c8c8c;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input input::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #8c8c8c;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input input:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #8c8c8c;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input .red-input {
+	border: 2px solid red;
+	border-right: 0;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input .search-btn {
+	cursor: pointer;
+	display: inline-block;
+	background-color: #003bb2;
+	color: #fff;
+	font-size: 18px;
+	width: 20%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input .search-btn:hover {
+	background-color: #3b77ef;
+}
+
+.yys-main .yys-content .yys-search-bar .search-input .sc-warn {
+	display: none;
+	width: 100%;
+	float: left;
+	text-align: left;
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 12px;
+	color: red;
+}
+
+.yys-main .yys-content .search-other{
+	margin-top: 30px;
+}
+
+.yys-main .yys-content .search-other div {
+	display: inline-block;
+	width: 200px;
+	margin: 10px auto;
+	position: relative;
+	/*margin-right: 15px;*/
+	/*right: 75px;*/
+}
+
+.yys-main .yys-content .search-other div:first-child{
+	left: -20px;
+}
+
+.yys-main .yys-content .search-other div img {
+	width: 25px;
+	height: 25px;
+}
+
+.yys-main .yys-content .search-other div #cart {
+	width: 30px;
+	height: 30px;
+}
+
+.yys-main .yys-content .search-other div a {
+	color: #000000;
+	text-decoration: none;
+	position: relative;
+	left: 10px;
+	bottom: 8px;
+	font-size: 14px;
+}
+
+.yys-main .yys-content .search-other div a:hover {
+	text-decoration: underline;
+}
+
+.yys-main .yys-content .search-warn {
+	margin-top: 68px;
+	font-size: 14px;
+	padding-left: 49px;
+}
+
+.yys-main .yys-content .search-warn select {
+	width: 120px;
+	padding: 3px 0;
+	background: none;
+	outline: none;
+}
+
+.yys-main .yys-powers {
+	font-size: 14px;
+	text-align: center;
+}
+
+.yys-main .yys-powers .yys-powers-pic .one-power-pic {
+	width: 110px;
+	display: inline-block;
+	margin: auto 30px;
+	margin-top: 40px;
+}
+
+.yys-main .yys-powers .yys-powers-pic .pic-other div {
+	padding-bottom: 8px;
+}
+
+.yys-main .yys-powers .yys-powers-pic .pic-other {
+	position: relative;
+	top: -10px;
+}
+
+.yys-main .yys-powers .yys-powers-pic .pic-other-2 {
+	color: #818181;
+}
+
+.yys-main .yys-powers .yys-powers-pic .one-pic-div {
+	width: 100%;
+}
+
+.yys-main .yys-powers .yys-powers-pic .one-pic-div img {
+	width: 100%;
+}
+
+.yys-main .yys-powers .yys-powers-head {
+	margin-top: 100px;
+}
+
+.yys-main .yys-powers .yys-powers-head div:first-child {
+	font-size: 32px;
+}
+
+.yys-main .yys-powers .yys-powers-head div:last-child {
+	padding: 20px 30px 30px 0px;
+}
+
+.yys-main .web-main {
+	width: 1150px;
+	margin: auto;
+	text-align: left;
+}
+
+.yys-main .yys-web-div .yys-web-img,
+.yys-main .yys-web-div .yys-web-text {
+	display: inline-block;
+	padding: 80px 0px;
+}
+
+.yys-main .yys-web-div .yys-web-img {
+	width: 58%;
+}
+
+.yys-main .yys-web-div .yys-web-img .img {
+	height: 240px;
+	cursor: pointer;
+	box-shadow: 0px 0px 20px 0px #a8a8a8;
+}
+
+.yys-main .yys-web-div .yys-web-text {
+	display: inline-block;
+	width: 41%;
+	position: relative;
+	top: -55px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.yys-main .yys-web-div2 .yys-web-text {
+	width: 58%;
+	padding-right: 150px;
+}
+
+.yys-main .yys-web-div2 .yys-web-img {
+	width: 41%;
+}
+
+.yys-main .yys-web-div .yys-web-text .title {
+	background-color: #3453a3;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 5px 10px;
+	position: relative;
+	top: -20px;
+}
+
+.yys-main .yys-to-buy {
+	height: 407px;
+	text-align: center;
+}
+
+.yys-main .yys-to-buy .div {
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+
+.yys-main .yys-to-buy .div:first-child {
+	padding-top: 80px;
+	font-size: 32px;
+}
+
+.yys-footer-2 {
+	min-width: 1200px !important;
+	margin-top: 50px !important;
+}
+
+.yys-main .yys-to-buy div a span {
+	background-color: #3453a3;
+	padding: 13px 25px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.yys-main .yys-to-buy div a span:hover {
+	background-color: #456ccf;
+}
+
+.yys-main .yys-to-buy div:last-child {
+	padding-top: 30px;
+}
+
+.yys-view-img {
+	display: none;
+}
+
+.yys-view-img .img-box {
+	width: 1000px;
+	height: 600px;
+	z-index: 1999;
+	position: fixed;
+	background: none;
+	left: 50%;
+	top: 50%;
+	margin-top: -300px;
+	margin-left: -500px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.yys-view-img .img-box img {
+	height: 100%;
+	margin: auto;
+	display: inline-block;
+}
+
+.yys-view-img .dialog-mask {
+	cursor: pointer;
+}
+
+.yys-main .yys-footer {
+	font-size: 12px;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width: 100%;
+	min-width: 1000px;
+}
+
+.yys-main .yys-footer ul {
+	margin-bottom: 20px;
+}
+
+.yys-main .yys-footer ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.yys-main .yys-footer ul li:first-child {
+	margin-left: 0;
+}
+
+.yys-main .yys-footer a {
+	color: #666;
+}
+
+.yys-main .yys-footer a:hover {
+	text-decoration: underline;
+}
+
+.dialog-mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(51, 51, 51, 0.6);
+}
+
+.yys-loading {
+	display: none;
+}
+
+.yys-loading .dialog-mask {
+	background-color: #f6f9ff;
+	opacity: 0.5;
+}
+
+.yys-loading .loading-box {
+	position: fixed;
+	background-color: #fff;
+	left: 50%;
+	top: 50%;
+	padding: 30px 70px;
+	margin-top: 8px;
+	margin-left: -168px;
+	border-radius: 2px;
+	border: 1px solid #f2f2f2;
+	box-shadow: 0 0 5px #f3f3f3;
+	font-size: 14px;
+}
+
+.yys-loading .loading-box i {
+	display: inline-block;
+	animation: loading 2s infinite linear;
+}
+
+@media screen and (max-height: 700px) {
+	.yys-main .yys-content .search-warn {
+		margin-top: 100px;
+	}
+}

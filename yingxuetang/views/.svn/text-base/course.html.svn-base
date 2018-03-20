@@ -1,0 +1,88 @@
+<link rel="stylesheet"
+	href="https://g.alicdn.com/de/prismplayer/2.5.0/skins/default/aliplayer-min.css" />
+<link rel="stylesheet" href="yingxuetang/resources/css/course.css" />
+<div id="course-main">
+
+	<div id="main-player">
+		<input type="hidden" id="course-id"> <input type="hidden"
+			id="course-pic">
+		
+		<div id="ali-player">
+		
+		<div id="seek-player">
+			<span><i class="icon iconfont icon-close"></i>上次看到</span><span id="seek-time">00:00:00</span><span id="to-seek-time">跳转播放</span>
+		</div>
+		</div>
+		<div id="non-player">
+			<p>播放器初始化中</p>
+		</div>
+		<!-- <div id="seek-player">
+			<span>上次看到</span><span>00:22:33</span> <span>跳转播放</span>
+		</div> -->
+		<div id="course-detail">
+			<div id="course-title"></div>
+			<div id="other-info">
+				<div id="creator">
+					鹰学堂讲师：<span id="author"></span>
+				</div>
+
+				<div id="time">
+					<i class="icon iconfont icon-shijian"></i> <span id="time-detail"></span>
+				</div>
+			</div>
+
+			<div id="desc"></div>
+
+			<div id="buy">
+				<div id="socialShare"></div>
+				<a target="_blank">
+					<div id="buy-online" class="to-yys-buy">成为VIP会员</div> </a>
+			</div>
+		</div>
+	</div>
+
+	<div id="player-bottom">
+		<div id="course-more">
+			<div id="course-more-left">
+				<div id="course-more-title">
+					<span class="active">介绍</span> <span>目录</span> <span>讨论区</span>
+				</div>
+
+				<div id="course-more-detail">
+					<div id="course-more-pro"></div>
+
+					<div id="course-more-list">
+						<div id="data-list"></div>
+
+						<div class="page-box m-style"></div>
+					</div>
+
+					<div id="course-ask-list">
+						<div id="data-list">
+
+							<div style="text-align: center;">暂无信息</div>
+						</div>
+
+						<div class="page-box m-style"></div>
+
+						<div id="ask-editor">
+							<textarea name="course-editor-content"></textarea>
+
+							<div id="post-answer" onclick="addComment()">发表问题</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="course-more-right">
+
+				<div id="course-more-hot-tip">热门推荐</div>
+
+				<div class="course-hot-list"></div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="yingxuetang/resources/js/course.js"></script>

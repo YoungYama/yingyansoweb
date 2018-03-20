@@ -1,0 +1,110 @@
+#main-container {
+	min-width: 1200px;
+	margin: 0px;
+	border: 0px;
+}
+
+#main-container a {
+	text-decoration: none
+}
+
+#main-container .header {
+	left: 0;
+	position: fixed;
+	top: 0;
+	height: 80px;
+	right: 0;
+	border-bottom: 1px solid #ddd;
+	z-index: 99;
+	background-color: #ebf5ff;
+	min-width: 1200px;
+}
+
+#main-container .logo-outer {
+	position: absolute;
+	top: 25px;
+	left: 80px;
+}
+
+#main-container .right-ul {
+	float: right;
+	margin-right: 20px;
+}
+
+#main-container .right-ul li {
+	float: left;
+	font-size: 14px;
+	list-style: none;
+	margin-top: 30px;
+	padding: 0px 15px;
+}
+
+#main-container .right-ul li a {
+	color: #000;
+}
+
+#main-container .right-ul li a:hover{
+	text-decoration: underline !important;
+}
+
+
+
+#main-container .footer {
+	height: 100px;
+	background: #3453a3;
+	width: 100%;
+	font-size: 13px;
+	text-align: center;
+	min-width: 1200px;
+}
+
+#main-container .footer .foot-wz {
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	width: 450px;
+	position: relative;
+	left: 110px;
+}
+
+#main-container .footer .foot-wz a {
+	color: #fff;
+	padding: 0 15px;
+}
+
+#main-container .footer .foot-wz a:hover {
+	text-decoration: underline !important;
+}
+
+#main-container .footer .foot-wz .f2 {
+	font-size: 13px;
+	color: #fff;
+	position: relative;
+	top: 10px;
+}
+
+#main-container .footer #qrcode{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-image: url(../img/dingyue.jpg);
+	background-size: 70px;
+	position: relative;
+	top: 15px;
+	left: 145px;
+}
+#main-container .footer #qrcode-text{
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	left: 155px;
+	line-height: 22px;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+#main-container #set-content{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	min-height: 700px;
+}

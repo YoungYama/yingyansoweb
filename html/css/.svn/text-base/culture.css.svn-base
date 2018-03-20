@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content1{ width:1200px; height:1580px; margin:auto;margin-top:40px; background:url(../img/images/culture_06.png);}
+.content1_text{ float:left; width:968px; height:1172px;margin-top:140px; margin-left:120px;}
+.content1_text p{ font-size:20px; color:#000; letter-spacing:2px; line-height:30px;}

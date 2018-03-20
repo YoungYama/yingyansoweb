@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>鹰眼搜-外贸人必须用的全球客户搜索引擎</title>
+
+		<!--浏览器不缓存HTML-->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+
+		<link rel="alternate icon" type="image/png" href="img/es.ico">
+		<link rel="stylesheet" href="css/scrollbar.css?version=18" />
+		<link rel="stylesheet" href="css/iconfont.css?version=18" />
+		<link rel="stylesheet" href="css/result.css?version=18" />
+		<link rel="stylesheet" href="css/common.css?version=18" />
+		<link rel="stylesheet" href="css/imageAlert.css?version=18">
+		<link rel="stylesheet" href="css/tipAlert.css?version=18">
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="header">
+				<div class="yy-logo">
+					<a href="index.html">鹰眼搜</a>
+				</div>
+				<div class="search-group">
+					<input autofocus="autofocus" type="text" id="searchInput" />
+					<span class="search-btn" id="searchBtn">鹰眼一下</span>
+				</div>
+				<div class="product-menu">
+					<ul class="product-list">
+						<!--<li class="menu-li" id="eagle-class">
+							<a href="#">鹰学堂<i class="icon iconfont icon-down"></i></a>
+							<ul class="more-li">
+								<li>
+									<a href="">小鹰学堂</a>
+								</li>
+								<li>
+									<a href="">中鹰学堂</a>
+								</li>
+								<li>
+									<a href="">大鹰学堂</a>
+								</li>
+							</ul>
+						</li>-->
+						<li class="menu-li">
+							<a href="yxt-index.html?action=courses">课程</a>
+						</li>
+						<li class="menu-li">
+							<a href="yxt-index.html?action=articles">资讯</a>
+						</li>
+						<li class="menu-li">
+							<a href="yxt-index.html?action=school-index">鹰学堂</a>
+						</li>
+						<li class="menu-li">
+							<a href="buy.html" target="_blank">成为VIP</a>
+						</li>
+						<li class="menu-li">
+							<a href="softbuy.html" target="_blank">购买软件</a>
+						</li>
+						<li class="menu-li">
+							<a href="html/index.html?about-case">成功故事</a>
+						</li>
+						<li class="menu-li">
+							<a href="html/index.html?about-us">团队介绍</a>
+						</li>
+						<li class="menu-li sign-btn">
+							<a href="javascript:void(0);" id="log-in"><i class="icon iconfont icon-denglu1"></i> 登录
+							</a>
+							<a href="javascript:void(0);" id="sign-in"><i class="icon iconfont icon-zhuce1"></i> 免费注册
+							</a>
+						</li>
+						<li class="menu-li user-info result-user-info">
+							<img src="img/bd_logo1.png" alt="用户头像" id="userImg" />
+							<div class="user-more">
+								<span class="user-name" id="userName"></span>
+								<!--<span class="welc-user">欢迎登录鹰眼搜</span>-->
+							</div>
+							<span id="isVIP" title="VIP用户">
+                    			<i class="icon iconfont icon-vip"></i>
+                    		</span>
+
+							<span id="beVIP">未授权</span>
+
+							<span id="jifen" title="鹰豆">
+                    		<i class="icon iconfont icon-douban-copy"></i>
+                    		<span id="jifen-num">0</span>
+							</span>
+
+							<!--<span id="info-span"><i class="icon iconfont icon-tongzhi"></i><span
+							id="info-count">0</span> </span>-->
+
+							<span class="quit-box">
+                        <a href="javascript:void(0);" class="quit"><span>退出</span></a>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="yys-tips">
+				<li>
+					<input type="checkbox" id="checkAll" />
+				</li>
+				<li class="tip-li active" id="normalCountry">
+					<span>通用引擎</span>
+				</li>
+				<li class="tip-li">
+					<span class="drop-title"><span class="mySelect" id="sel1">亚洲区域</span><i class="icon iconfont icon-down"></i></span>
+					<ul class="dropdown-menu" id="drop-menu-yz"></ul>
+
+				</li>
+				<li class="tip-li">
+					<span class="drop-title"><span class="mySelect" id="sel2">欧洲区域</span><i class="icon iconfont icon-down"></i></span>
+					<ul class="dropdown-menu" id="drop-menu-oz"></ul>
+
+				</li>
+				<li class="tip-li">
+					<span class="drop-title"><span class="mySelect" id="sel3">美洲区域</span><i class="icon iconfont icon-down"></i></span>
+					<ul class="dropdown-menu" id="drop-menu-mz">
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="15">美国(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="16">加拿大(英语|法语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="17">墨西哥(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="18">巴拉圭(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="19">阿根廷(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="61">古巴(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="62">乌拉圭(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="63">智利(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="64">哥斯达黎加(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="65">巴西(葡萄牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="66">波多黎各(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="67">哥伦比亚(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="68">秘鲁(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="69">巴拿马(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="70">多米尼加(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="71">危地马拉(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="72">伯利兹(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="73">萨尔瓦多(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="74">洪都拉斯(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="75">尼加拉瓜(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="76">巴哈马(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="77">牙买加(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="78">格林纳丁斯(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="79">特立尼达/多巴哥(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="80">委内瑞拉(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="81">圭亚那(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="82">厄瓜多尔(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="83">玻利维亚(西班牙语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="84">安提瓜和巴布达(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="85">海地(海地语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="86">圣基茨和尼维斯(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="87">圣卢西亚(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="88">圣文森特(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="89">格林纳达(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="90">巴巴多斯(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="91">荷属安的列斯(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="92">法属圭亚那(英语)</a>
+						</li>
+
+						<li>
+							<a class="typeslect" href="javascript:void(0);" cid="93">苏里南(英语)</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="tip-li">
+					<span class="drop-title"><span class="mySelect" id="sel4">大洋洲区域</span><i class="icon iconfont icon-down"></i></span>
+					<ul class="dropdown-menu" id="drop-menu-dyz"></ul>
+
+				</li>
+				<li class="tip-li">
+					<span class="drop-title"><span class="mySelect" id="sel5">非洲区域</span><i class="icon iconfont icon-down"></i></span>
+					<ul class="dropdown-menu" id="drop-menu-fz"></ul>
+				</li>
+				<!--<li>-->
+				<!--<label for="all-mate">广泛匹配</label>-->
+				<!--<input type="checkbox" class=mycheckbox id="all-mate"/>-->
+				<!--</li>-->
+			</ul>
+			<div class="yys-content">
+				<div class="yys-msg">
+					<div class="search-time">
+						找到约&nbsp;&nbsp;<span id="recordNum">0</span>&nbsp;&nbsp;条结果（用时&nbsp;&nbsp;<span id="searchTime">0</span>&nbsp;&nbsp;秒）
+					</div>
+					<div class="info-scroll" id="FontScroll">
+						<i class="icon iconfont icon-tongzhi1 icon-tongzhi"></i>
+						<ul>
+							<li>
+								<a href="#">
+									<p class="scroll-p">
+										今天<span class="client-name">Beacuse</span>已搜索到<span>100</span>个客户
+									</p>
+									<p class="scroll-p">
+										今天<span class="client-name">John</span>已获得<span>260</span>个邮箱
+									</p>
+									<p class="scroll-p">
+										今天<span class="client-name">Emma</span>已找到<span>10</span>个企业
+									</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="scroll-p">
+										今天<span class="client-name">Mary</span>已搜索到<span>150</span>个客户
+									</p>
+									<p class="scroll-p">
+										今天<span class="client-name">Allen</span>已获得<span>300</span>个邮箱
+									</p>
+									<p class="scroll-p">
+										今天<span class="client-name">Natasha</span>已找到<span>12</span>个企业
+									</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="scroll-p">
+										今天<span class="client-name">Sophia</span>已搜索到<span>97</span>个客户
+									</p>
+									<p class="scroll-p">
+										今天<span class="client-name">Steve</span>已获得<span>160</span>个邮箱
+									</p>
+									<p class="scroll-p">
+										今天<span class="client-name">William</span>已找到<span>11</span>个企业
+									</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="info-content">
+					<div class="info-list-box">
+					</div>
+					<div class="noData">
+						<div id="noData-msg">
+							<p>当前已无更多<strong id="noData-searchWord">“led strip lights”</strong>精准匹配客户信息。</p>
+							<p>为了向您显示精准度最高的结果，鹰眼搜为您省略了一些与已显示结果相似但不精准的信息。</p>
+							<p>您可以<strong><a href="javascript: void(0);" id="noData-getMoreInfo">更换关健词或切换国家区域重新搜索以获取更多的结果。</a></strong></p>
+						</div>
+						<div id="noData-advice">
+							<p><strong>建议：</strong></p>
+							<ol>
+								<li>请检查输入字词有无错误。</li>
+								<li>请尝试其他查询词。</li>
+								<li>请改用较常见的字词。</li>
+								<li>请减少查询字词的数量。</li>
+								<li>请使用目标国本地语言搜索。</li>
+							</ol>
+						</div>
+						<div id="noData-tip">
+							<p><strong>友情提示：</strong></p>
+							<p>鹰眼搜是一款具备智能学习的智慧型外贸客户搜索引擎。越使用，越精准，越使用，越智慧。 鹰眼搜后台爬虫系统会自动根据您的使用需求，365天不间断在全球抓取和分析与您所需高度匹配的精准数据，敬请关注绑定鹰眼搜公众号，有最新客户信息，鹰眼搜将通过微信号推送给您。
+							</p>
+						</div>
+					</div>
+					<div id="myPage">
+						<ul>
+							<li class="prevPage">上一页</li>
+							<li class="page">1</li>
+							<li class="nextPage">下一页</li>
+						</ul>
+					</div>
+				</div>
+				<div class="yys-banner">
+					<a href="buy.html" target="_blank" title="点击查看详情"><img src="img/index-img.png" id="index-img"></a>
+				</div>
+			</div>
+			<!--<div class="yys-footer">
+				<ul>
+					<li>
+						<a href="http://bbs.yingyanso.net/forum-50-1.html" target="_blank" title="常见问题">常见问题</a>
+					</li>
+					<li>
+						<a href="html/product/images/zhengshu.jpg" target="_blank" title="软件证书">软件证书</a>
+					</li>
+					<li>
+						<a href="https://www.cnzz.com/stat/website.php?web_id=1254403822" title="站长统计" target="_blank">站长统计</a>
+					</li>
+				</ul>
+				<span>版权所有 © <a href="http://www.yingyanso.cn" target="_blank">深圳鹰眼搜科技有限公司</a>　<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备10063542号</a></span>
+			</div>-->
+
+			<div class="yys-footer-2">
+				<div class="foot-wz">
+					<a href="html/index.html?product-faq">常见问题</a>
+					<a href="html/images/zhengshu.jpg" target="_blank">软件证书</a>
+					<a href="html/index.html?about-friendlink">友情链接</a>
+					<script src="https://s11.cnzz.com/z_stat.php?id=1254403822&web_id=1254403822" language="JavaScript"></script>
+					<br> <span class="f2 ">版权所有 &copy; 深圳鹰眼搜科技有限公司　<a href="http://www.miibeian.gov.cn/ " target="_blank ">粤ICP备10063542号</a></span>
+				</div>
+
+				<div id="qrcode"></div>
+
+				<div id="qrcode-text">
+					欢迎关注鹰眼搜服务号<br /> 探索最先进的找客户方法
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/json2.js?version=18"></script>
+		<script type="text/javascript" src="js/browser-ompatibility.js?version=18"></script>
+		<script type="text/javascript" src="js/jquery.min-1.10.2.js?version=18"></script>
+		<script type="text/javascript" src="js/config.js?version=18"></script>
+		<script type="text/javascript" src="js/jqpaginator.min.js?version=18"></script>
+		<script type="text/javascript" src="js/imageAlert.js?version=18"></script>
+		<script type="text/javascript" src="js/tipAlert.js?version=18"></script>
+		<script type="text/javascript" src="js/yys-cookie-token-1.0.js?version=18"></script>
+		<script type="text/javascript" src="js/utf.js?version=18"></script>
+		<script type="text/javascript" src="js/jquery.qrcode.js?version=18"></script>
+		<script type="text/javascript" src="js/common.js?version=18"></script>
+		<script type="text/javascript" src="js/show-bind-qrcode.js?version=18"></script>
+		<script type="text/javascript" src="js/div-drag.js?version=18"></script>
+		<script type="text/javascript" src="js/result.js?version=18"></script>
+	</body>
+
+</html>

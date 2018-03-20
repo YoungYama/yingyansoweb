@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>学堂价值</title>
+    <link href="yingxuetang/resources/css/school/value.css" rel="stylesheet" type="text/css">
+    <link href="yingxuetang/resources/css/school/head-to-tail.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--content -->
+    <div class="content1"><img src="yingxuetang/resources/images/school/value_03.png" width="264" height="90"></div>
+    <div class="content2">
+        <div class=" content2_text1">
+            <div class="text"><img src="yingxuetang/resources/images/school/value_07.png" width="87" height="54"></div>
+            <div class="content2_text1_1"><p class="p">让外贸业务人员：</p>
+            <p style="margin-top:10px;line-height:32px;">
+                全面获取客户开发知识<br/>
+
+快速提升外贸实战能力<br/>
+
+
+轻松适应不同企业环境
+            </p></div>
+        </div>
+        <div class=" content2_text2">
+            <div class="text"><img src="yingxuetang/resources/images/school/value_10.png" height="54"></div>
+            <div class="content2_text1_1"><p class="p2">让外贸公司老板：</p>
+               <p style="margin-top:10px;line-height:32px;"> 
+               解决外贸领域招人难、留人难的问题<br/>
+
+获得更专业、更职业的外贸营销人才<br/>
+
+降低聘任新人的磨合风险和培训成本</p></div>
+        </div>
+        <div class="content2_text1"><img src="yingxuetang/resources/images/school/value_15.png" width="464" height="368"></div>
+        <div class="content2_text2"><img src="yingxuetang/resources/images/school/value_17.png" width="464" height="368"></div>
+    </div>
+
+    <div class="none"></div>
+    
+</body>
+</html>

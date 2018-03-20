@@ -1,0 +1,86 @@
+body,
+#header{
+	background-color: #fafafa !important;
+}
+
+#article-main-content{
+	padding-top: 40px;
+	width: 800px;
+	margin: auto;
+}
+
+#article-header {
+	height: 80px;
+	background-color: #3453a3;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border:1px solid #ededed;
+}
+
+#article-header #logo{
+	height: 60px;
+	position: relative;
+	top: 15px;
+	left: 20px;
+}
+
+#article-header span{
+	font-size: 26px;
+	color: #FFFFFF;
+	position: relative;
+	bottom: 8px;
+	left: 20px;
+}
+
+#article-main{
+	background-color: #FFFFFF;
+	min-height: 600px;
+	margin-bottom: 60px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border:1px solid #ededed;
+	padding: 15px 30px 30px 30px;
+	border-top: 0px solid #000000;
+}
+
+#article-content{
+	border-top: 1px solid #c6c3c3;
+	border-bottom: 1px solid #c6c3c3;
+	padding: 20px 0px;
+}
+
+#article-content img{
+	max-width: 100%;
+}
+
+#article-title{
+	font-size: 21px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	color: #000000;
+}
+
+#article-footer{
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+#article-footer i{
+	font-size: 25px;
+	margin-left: 15px;
+	position: relative;
+	top: 3px;
+	cursor: pointer;
+}
+
+#article-footer .icon-weixin-copy1{
+	color: green;
+}
+
+#article-footer .icon-qq-copy{
+	color: #0559d8;
+}
+
+#article-footer .icon-weibo{
+	color: red;
+}

@@ -1,0 +1,685 @@
+<!--登录、注册、忘记密码-->
+<div class="register">
+	<div class="dialog-mask"></div>
+	<div class="sign-in">
+		<div class="loading">
+			<div class="loadEffect">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="register-tab">
+			<div class="tab-title">
+				<span class="log-in-title">立即登录</span>
+				<span class="sign-in-title">免费注册</span>
+				<i class="icon iconfont icon-cha close" id="close-sign"></i>
+			</div>
+			<div class="import-table">
+				<div id="log-in-msg" style="display: none;color: red;text-align: center;position: relative;top: -19px;font-size: 16px;">msg</div>
+				<div class="log-in-box">
+					<div class="import-frame user-name">
+						<i class="icon iconfont icon-yonghu"></i>
+						<!--<input type="text" onkeypress="return event.keyCode>=48&&event.keyCode<=57" placeholder="输入手机号" id="user-tel"/>-->
+						<input type="text" placeholder="输入手机号" id="user-tel" />
+						<span class="red user-warn">请输入正确的手机号！</span>
+					</div>
+					<div class="import-frame password">
+						<i class="icon iconfont icon-mima"></i>
+						<input type="password" placeholder="输入密码" id="user-key" />
+						<span class="red password-warn">请输入6-20位密码！</span>
+					</div>
+					<div class="log-in-btn">
+						登录
+					</div>
+					<a href="javascript:void(0);" class="p_forget">忘记密码？</a>
+					<div id="third-login">
+						<img src="img/weixin-logo.png" class="weixin-logo" title="微信登录">
+						<img src="img/qq-logo.png" class="qq-logo" title="QQ登录">
+						<img src="img/weibo-logo.png" class="weibo-logo" title="微博登录">
+					</div>
+					<div class="sign-in-footer">
+						外贸找客户，就上鹰眼搜
+					</div>
+				</div>
+				<div class="sign-in-box">
+					<div class="import-frame user-name">
+						<i class="icon iconfont icon-yonghu"></i>
+						<!--<input type="text" onkeypress="return event.keyCode>=48&&event.keyCode<=57" placeholder="输入手机号" id="user-tel"/>-->
+						<input type="text" placeholder="输入手机号" id="sign-user-tel" />
+						<span class="red user-warn">请输入正确的手机号！</span>
+					</div>
+					<div class="import-frame password">
+						<i class="icon iconfont icon-mima"></i>
+						<input type="password" placeholder="输入密码" id="sign-user-key" />
+						<span class="red password-warn">请输入6-20位密码！</span>
+					</div>
+					<div class="code-box">
+						<div class="import-frame mycode">
+							<i class="icon iconfont icon-yanzhengma"></i>
+							<input type="text" placeholder="输入验证码" id="codeVal" />
+							<span class="red code-warn">请输入正确的验证码！</span>
+						</div>
+						<span class="code-btn" id="code">获取验证码</span>
+						<span class="disable-btn" id="disable-code"><span class="code-date" id="code-date">60</span>秒后重发</span>
+					</div>
+					<div class="agreement">
+						<input type="checkbox" id="accept-agreement" checked="checked" />
+						<a href="html/index.html?about-agreement" target="_blank" title="点击查看《鹰眼搜用户协议》">我已经仔细阅读并接受《鹰眼搜用户协议》</a>
+					</div>
+					<div class="sign-in-btn sign-in-btn-click">
+						注册
+					</div>
+					<!--<div id="third-login">
+						<img src="img/weixin-logo.png" class="weixin-logo" title="微信注册">
+						<img src="img/qq-logo.png" class="qq-logo" title="QQ注册">
+						<img src="img/weibo-logo.png" class="weibo-logo" title="微博注册">
+					</div>-->
+					<div class="sign-in-footer">
+						外贸找客户，就上鹰眼搜
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reg-forg-box">
+			<div class="reg-forg reg0">
+				<div class="title">
+					<h3>找回密码<i class="icon iconfont icon-cha fClose" ></i></h3>
+				</div>
+				<div class="reg-cont">
+					<div class="reg-input r0">
+						<i class="icon iconfont icon-yonghu"></i>
+						<input type="text" placeholder="请输入您注册的手机号" id="f-userTel" />
+						<span class="red f-telWarn">请输入正确的手机号！</span>
+					</div>
+					<div class="reg-code">
+						<div class="reg-input f-code">
+							<i class="icon iconfont icon-yanzhengma"></i>
+							<input type="text" placeholder="输入验证码" id="f-codeVal" />
+							<span class="red f-code-warn">请输入正确的验证码！</span>
+						</div>
+						<span class="code-btn" id="get_code">获取验证码</span>
+						<span class="disable-btn" id="f-disable-code"><span class="code-date" id="f-code-date">60</span>秒后重发</span>
+					</div>
+					<div class="back-log">
+						<span id="free-reg">免费注册</span> |
+						<span id="to-log">返回登录</span></div>
+				</div>
+				<div class="reg-btn" id="reg-btn1">
+					下一步
+				</div>
+				<div class="sign-in-footer">
+					外贸找客户，就上鹰眼搜
+				</div>
+			</div>
+			<div class="reg-forg reg1">
+				<div class="title">
+					<h3>重置密码<i class="icon iconfont icon-cha fClose" ></i></h3>
+				</div>
+				<div class="reg-cont">
+					<div class="reg-input r1">
+						<i class="icon iconfont icon-mima"></i>
+						<input type="password" placeholder="请输入新密码！" id="f-sign-user-key" />
+						<span class="red f-password-warn">请输入6-20位密码！</span>
+					</div>
+					<div class="reg-input">
+						<i class="icon iconfont icon-mima"></i>
+						<input type="password" placeholder="请再次确认您的新密码" id="f-sign-user-key2" />
+						<span class="red f-password-warn">两次输入的密码不一致！</span>
+					</div>
+				</div>
+				<div class="reg-btn" id="reg-btn2">
+					立即修改
+				</div>
+				<div class="sign-in-footer">
+					外贸找客户，就上鹰眼搜
+				</div>
+			</div>
+			<div class="reg-forg reg2">
+				<div class="title">
+					<h3>操作提示<i class="icon iconfont icon-cha fClose" ></i></h3>
+				</div>
+				<div class="reg-cont">
+					<div class="success-warn">
+						<i class="icon iconfont icon-queding icon-zhengque1"></i>
+						<span>恭喜你！密码重置成功！</span>
+					</div>
+				</div>
+				<div class="reg-btn" id="reg-btn3">
+					立即登录
+				</div>
+				<div class="sign-in-footer">
+					外贸找客户，就上鹰眼搜
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--登录、注册、忘记密码-->
+
+<!--翻得快-->
+<div class="backResult-layer">
+	<div class="dialog-mask"></div>
+	<div class="backResult">
+		<a href="javascript:void(0);">亲，翻这么快，您的宝贵客户信息都没仔细看吧！返回看看…</a>
+		<span class="red">我要看下一页 ···
+                <span id="yyedtime">6</span> ···
+		</span>
+		<span class="gray">
+                 鹰眼搜QQ群：138123442
+            </span>
+		<img src="img/dingyue.jpg" alt="" class="dy-code" />
+		<span class="gray fb">意见反馈</span>
+	</div>
+
+</div>
+<!--翻得快-->
+
+<!--注册成功-->
+<div class="registerSuccess-layer">
+	<div class="dialog-mask"></div>
+	<div class="registerSuccess">
+		<span class="red">  关注鹰眼搜公众号，学习搜索客户技巧
+		</span>
+
+		<!--<a href="javascript:void(0);">关注鹰眼搜公众号，学习搜索客户技巧</a>-->
+		<img id="qrcode-img" class="dy-code" />
+
+		<div id="qrcode-img-div"></div>
+
+		<!--<a href="javascript:void(0);">自动登录中 ···
+					<span id="yyedtime">10</span> ···</a>-->
+
+		<a href="javascript:void(0);">扫一扫，关注后即可登录使用</a>
+	</div>
+
+</div>
+<!--注册成功-->
+
+<!--超过30分钟没有操作-->
+<div class="longTimeNoDo-layer">
+	<div class="dialog-mask"></div>
+	<div class="longTimeNoDo">
+		<span class="red">  您久未操作，鹰眼搜需重新加载
+		</span>
+
+		<a href="javascript:void(0);">关注鹰眼搜公众号，学习开发客户技巧</a>
+		<img src="img/dingyue.jpg" alt="" class="dy-code" />
+		<a href="javascript:void(0);">页面重新加载中 ···
+			<span id="yyedtime">3</span> ···</a>
+	</div>
+
+</div>
+<!--注册成功-->
+
+<!--提取联系方式计时-->
+<div class="loading-layer">
+	<div class="dialog-mask"></div>
+	<div class="loading-content div-drag">
+		<i class="icon iconfont icon-cha close-load"></i>
+		<div class="loading-close"></div>
+		<div class="loading-header can-drag loading-info-drag">
+			<span>正在为您实时抓取数据 ， 预计耗时5秒-2分钟 ， 请稍候...</span>
+		</div>
+		<div class="loading-info">
+			<span class="green"><span class="c-title">客户网址为： </span>
+			<a id="clientUrl" class="clientUrl" target="_blank" style="color: #159c12;"></a>
+			</span>
+			<span class="loading-time">
+                    <i class="icon iconfont icon-loading-m myloading"></i>
+                    <span class="c-title">正在努力抓取中，当前耗时： <span class="red time"><span class="time-minute">00</span> : <span class="time-second">00</span></span>
+			</span>
+			</span>
+			<div class="green yys-warn second-10">
+				<span>亲，当前网速较慢，请耐心等待 ^_^</span>
+			</div>
+			<div class="green yys-warn minute-1">
+				<span>亲，由于当前网速较慢，操作可能会超过2分钟，您可选择耐心等待，或关闭当前窗口，后台会为您继续抓取，稍后可直接查看 ^_^</span>
+			</div>
+			<div class="green yys-warn minute-3">
+				<span>亲，由于网速慢，已转入后台自动抓取，请稍后再来查看 ^_^</span>
+			</div>
+		</div>
+		<div class="loading-rocket"></div>
+		<div class="loading-guild">
+			<ul class="tips">
+				<li><i class="icon iconfont icon-yousanjiao"></i>
+					<a href="http://bbs.yingyanso.net/thread-1411-1-1.html" target="_blank">如何搜索客户更精准？</a>
+				</li>
+				<li><i class="icon iconfont icon-yousanjiao"></i>
+					<a href="html/index.html?product-introduce" target="_blank">深入了解鹰眼搜。</a>
+				</li>
+				<li><i class="icon iconfont icon-yousanjiao"></i>
+					<a href="html/index.html?about-case" target="_blank">利用鹰眼搜开发出客户的他们。</a>
+				</li>
+				<li><i class="icon iconfont icon-yousanjiao"></i>
+					<a href="http://bbs.yingyanso.net/thread-1417-1-1.html" target="_blank">如何快速找出关键联系人？</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--提取联系方式计时-->
+<!--提取出来的信息-->
+<div class="client-info">
+	<div class="dialog-mask"></div>
+	<div class="yys-infomation div-drag">
+		<i class="icon iconfont icon-cha close-btn"></i>
+		<div class="info-header">
+			<span class="logo can-drag view-info-drag">鹰眼搜</span>
+			<div id="client-web-domain">
+				<a target="_blank" id="domain">www.yingyanso.cn</a>
+				<a target="_blank" id="domain-more" title="点此查看域名Whois信息"><i class="icon iconfont icon-buqueding"></i></a>
+			</div>
+		</div>
+		<div class="info-content-box">
+			<div class="left-nav">
+				<ul id="left-nav">
+					<li class="info-active" isValid="true">基本资料</li>
+					<li isValid="true">邮箱地址</li>
+					<li isValid="true">社交信息</li>
+					<!--<li isValid="false" msg="此企业的产品动态正在更新中，敬请期待。">产品动态</li>
+					<li isValid="false" msg="此企业的商机信息正在更新中，敬请期待。">商机信息</li>
+					<li isValid="false" msg="此企业的组织架构正在更新中，敬请期待。">组织架构</li>-->
+				</ul>
+			</div>
+			<div class="more-info">
+				<div class="info-cnt cnt1 selected">
+					<table>
+						<tr>
+							<td width="50px">简介：</td>
+							<td>
+								<div id="my-subject"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>描述：</td>
+							<td>
+								<div id="my-desc-info"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>电话：</td>
+							<td>
+								<span id="my-phone-info"></span></td>
+						</tr>
+						<tr>
+							<td>邮箱：</td>
+							<td>
+								<a id="my-email-info" target="_blank"></a><span id="more-email-info">更多</span></td>
+						</tr>
+						<tr>
+							<td>国家：</td>
+							<td>
+								<span id="my-country-info"></span></td>
+						</tr>
+						<tr>
+							<td>更新：</td>
+							<td id="doTime">2017-11-11 11:11:11</td>
+						</tr>
+					</table>
+
+					<div id="infos-bottom">
+						<div id="infos-save">
+							<a href="javascript: saveInfos();" title="点此保存该客户所有资料">保存资料</a>
+						</div>
+						<div id="infos-download">
+							<a href="javascript: downloadInfos();" title="点此下载该客户所有资料">下载资料</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="info-cnt cnt2">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<thead>
+							<th class="email-th">邮箱地址</th>
+							<th>验证</th>
+							<th>发邮件</th>
+						</thead>
+						<tbody class="emailBody">
+							<!--<tr>
+								<td>
+									<a title="双击复制：info@kled.com.cn" href="Javascript: void(0);" class="info-email">infoinfoinfoinfoinfoinfoinfoinfo@kled.com.cn</a>
+
+									<span class="copy-ok"></span>
+								</td>
+								<td>
+									<a href="javascript:void(0);" class="info-vertify">验证</a>
+								</td>
+								<td>
+									<a href="javascript:void(0);" default="default" class="info-contact">立刻联系</a>
+								</td>
+							</tr>-->
+						</tbody>
+					</table>
+					<div class="noData-table">
+						<i class="icon iconfont icon-zanwushuju"></i>
+						<span>暂无数据</span>
+					</div>
+				</div>
+				<div class="info-cnt cnt3">
+					<table id="contact-infos">
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-biaotizhongdian"></i><span>主题</span></td>
+							<td>
+								<div class="contact-info-td" id="contact-info-subjuct">
+									www.yingyanso.cn
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-wangzhi"></i><span>网址</span></td>
+							<td>
+								<div class="contact-info-td" id="contact-info-weburl">
+									<a href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-facebook"></i><span>Facebook</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Facebook" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-linkedin"></i><span>Linkedin</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Linkedin" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-twitter"></i><span>Twitter</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Twitter" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-google-side"></i><span>Google+</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Google" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-youtobe"></i><span>Youtube</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Youtobe" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="info-cnt-title"><i class="icon iconfont icon-p"></i><span>Pinterest</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Pintertst" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="GearBest-tr new-contact-tr">
+							<td class="info-cnt-title"><i class="icon iconfont icon-zimug"></i><span>GearBest</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="GearBest" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="Instagram-tr new-contact-tr">
+							<td class="info-cnt-title"><i class="icon iconfont icon-instagram1"></i><span>Instagram</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Instagram" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="VK-tr new-contact-tr">
+							<td class="info-cnt-title"><i class="icon iconfont icon-vk"></i><span>VK</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="VK" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="Badoo-tr new-contact-tr">
+							<td class="info-cnt-title"><i class="icon iconfont icon-B"></i><span>Badoo</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Badoo" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="Tumblr-tr new-contact-tr">
+							<td class="info-cnt-title"><i class="icon iconfont icon-tumblr"></i><span>Tumblr</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Tumblr" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="Flickr-tr new-contact-tr">
+							<td class="info-cnt-title"><i class="icon iconfont icon-flickr"></i><span>Flickr</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="Flickr" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="ASKfm-tr new-contact-tr">
+							<td class="info-cnt-title"><i class="icon iconfont icon-A1"></i><span>ASKfm</span></td>
+							<td>
+								<div class="contact-info-td">
+									<a id="ASKfm" href="#" target="_blank">http://www.yingyanso.cn</a>
+								</div>
+							</td>
+						</tr>
+
+					</table>
+					<!--<ul>
+						<li>
+							<div>
+								<span class="social-title">Facebook：</span>
+								<a id="Facebook" target="_blank"></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="social-title">Linkedin：</span>
+								<a id="Linkedin" target="_blank"></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="social-title">Twitter：</span>
+								<a id="Twitter" target="_blank">
+									</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="social-title">Google：</span>
+								<a id="Google" target="_blank"></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="social-title">Youtobe：</span>
+								<a id="Youtobe" target="_blank"></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="social-title">Pintertst：</span>
+								<a id="Pintertst" target="_blank"></a>
+							</div>
+						</li>
+					</ul>-->
+				</div>
+				<div class="info-cnt cnt4">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<thead>
+							<th>主题</th>
+							<th>日期</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="info-cnt cnt5">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<thead>
+							<th>姓名</th>
+							<th>职位</th>
+							<th>邮箱</th>
+							<th>电话</th>
+						</thead>
+						<tbody>
+							<!--<tr>
+								<td>小西姐</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>晓婷姐</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>黄大鹏</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>彭于晏</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>-->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--提取出来的信息-->
+
+<!--加载-->
+<div class="yys-loading" style="display: none;z-index: 999;">
+	<div class="dialog-mask"></div>
+	<div class="loading-box">
+		<i class="icon iconfont icon-loading-m"></i>
+		<span id="loading-msg">正在全球查询数据中，请稍候...</span>
+	</div>
+</div>
+<!--加载-->
+
+<!--选择购买方式界面-->
+<div class="sure-product-pay-info-layer">
+	<div class="sure-dialog-mask"></div>
+	<div class="sure-content div-drag">
+		<div class="sure-header can-drag sure-buy-drag">
+			<span class="left-header">购买</span>
+			<span class="right-header"><i class="icon iconfont icon-close"></i></span>
+		</div>
+		<div class="product-info">
+			<div>
+				<div class="left-info">开通账号：</div>
+				<div class="right-info"><span class="your-account">110</span></div>
+			</div>
+			<div>
+				<div class="left-info">会员账号数：</div>
+				<div class="right-info"><span class="your-user-count">0</span></div>
+			</div>
+			<div>
+				<div class="left-info">会员时长：</div>
+				<div class="right-info"><span class="your-date">1年</span></div>
+			</div>
+			<div>
+				<div class="left-info">到期时间：</div>
+				<div class="right-info"><span class="your-valid-date">0000-00-00</span></div>
+			</div>
+		</div>
+		<div class="real-price">
+			<div>
+				<div class="left-info">实际支付：</div>
+				<div class="right-info"><span class="your-cut-price">￥0</span><span class="your-price">￥2580</span></div>
+			</div>
+		</div>
+		<div class="pay-methods-choose">
+			<div class="weixin-pay pay-choose active" name="wxpay"><i class="icon iconfont icon-weixin"></i>微信支付<i class="icon iconfont icon-xuanze"></i></div>
+			<div class="zhifubao-pay pay-choose" name="alipay"><i class="icon iconfont icon-zhifubao"></i>支付宝支付<i class="icon iconfont icon-xuanze"></i></div>
+		</div>
+		<div class="quick-pay">
+			<span class="quick-pay-btn">立即付款</span>
+		</div>
+		<div class="final-msg">
+			<p>购买成功后，如需申请发票，请在购买1周内以邮件的方式发送给鹰眼搜公司</p>
+			<a href="img/example.png" target="_blank" title="点击查看样例">点击查看样例</a>
+		</div>
+	</div>
+</div>
+<!--选择购买方式界面-->
+
+<!--电脑端微信支付二维码-->
+<div class="sure-payLayer">
+	<div class="dialog-mask"></div>
+	<div id="wx-pay-qr">
+		<i class="icon iconfont icon-cha close"></i>
+		<div id="wx-pay-tip">请使用微信扫一扫进行购买</div>
+		<div id="wx-pay-qr-img"></div>
+	</div>
+</div>
+<!--电脑端微信支付二维码-->
+
+<!--在线咨询-->
+<div class="right-tip-div">
+	<div class="tip-item" onclick="contactOnline()">
+		<p><i class="icon iconfont icon-lianxi"></i></p>
+		<p>在线咨询</p>
+	</div>
+</div>
+<!--在线咨询-->
+
+<!--分享鹰眼搜二维码-->
+<div class="shareYys-payLayer">
+	<div class="shareYys-dialog-mask"></div>
+	<div id="shareYys-qr">
+		<div id="shareYys-top-tip">
+			<div class="my-line">扫一扫</div>
+			<div class="my-line">将鹰眼搜分享给朋友</div>
+		</div>
+		<div id="shareYys-qr-img"></div>
+		<div id="shareYys-bottom-tip">
+			<div class="my-line">一个好友注册等于10个鹰豆</div>
+			<div class="my-line">一个好友购买等于等额鹰豆（可提现哦）</div>
+			<div class="my-line">
+				<a href="http://bbs.yingyanso.net/thread-1435-1-1.html" target="_blank" title="点此查看“鹰豆使用规则”">“鹰豆使用规则”</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--分享鹰眼搜二维码-->
+
+
+<div id="cookie-iframe" style="display: none;"></div>
